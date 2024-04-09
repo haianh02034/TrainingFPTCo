@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\ApplicationDevelopment\TrainingFPTCo\TrainingFPTCo\TrainingFPTCo
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/ApplicationDevelopment/TrainingFPTCo/TrainingFPTCo/TrainingFPTCo/Views/Account/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ApplicationDevelopment/TrainingFPTCo/TrainingFPTCo/TrainingFPTCo/Views/Account/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

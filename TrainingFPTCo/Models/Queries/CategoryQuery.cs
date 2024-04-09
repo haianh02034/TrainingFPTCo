@@ -34,6 +34,7 @@ namespace TrainingFPTCo.Models.Queries
         public List<CategoryDetail> GetAllCategories( string? SearchString, string? FilterStatus)
         {
             List<CategoryDetail> category = new List<CategoryDetail>();
+
             using(SqlConnection connection = Database.GetSqlConnection())
             {
                 string sqlData =string.Empty;

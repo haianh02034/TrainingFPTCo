@@ -7,6 +7,7 @@
     ViewData["breadcrumb"] = "Home";
     ViewData["breadcrumb_active"] = "Account";
     Layout = "~/Views/Shared/_LayoutMain.cshtml";
+    bool statusAdd = Convert.ToBoolean(TempData["saveStatus"]);
 
 }
 <div class="row">
@@ -32,6 +33,17 @@
 </form>
     </div>
 </div>
+@if (TempData["saveStatus"] != null)
+{
+    @if (statusAdd)
+    {
+        <div class="text-success my-3"> Add Successfully </div>
+    }
+    else
+    {
+        <div class="text-danger my-3"> Add Failure </div>
+    }
+}
 <div class="row mt-3 d-flex justify-content-center" >
             <table class="table table-striped table-hover mt-3" style="margin-left: 0;">
             <thead class="table-success">
@@ -91,7 +103,7 @@
         }
     </tbody>
 </table>
-
+   
 
 </div>
 

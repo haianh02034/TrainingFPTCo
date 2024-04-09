@@ -62,21 +62,7 @@ namespace TrainingFPTCo.Controllers
                 {
                     //tien hanh up load
                     string uniquePoster = UploadFileHelper.UploadFile(PosterImage,"images");
-                   // var categoryData = new Category()
-                   // {
-                   //     Name = category.Name,
-                   //     Description = category.Description,
-                   //     ParentId = 0,
-                   //     Status = category.Status,
-                   //     PosterImage = uniquePoster,
-                   //     CreatedAt = Convert.ToDateTime(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"))
-
-                   // };
-                   // _dbContext.Categories.Add(categoryData);
-                   // _dbContext.SaveChangesAsync(true);
-                   //// thong bao thah cong
-                   // TempData["saveStatus"] = true;
-
+                   
                     int idCategory = new CategoryQuery().InsertItemCategory(category.Name, category.Description, uniquePoster, category.Status);
                     if(idCategory > 0)
                     {

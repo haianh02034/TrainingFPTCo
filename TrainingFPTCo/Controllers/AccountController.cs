@@ -4,6 +4,7 @@ using TrainingFPTCo.Models;
 using TrainingFPTCo.Models.Queries;
 using TrainingFPTCo.Helpers;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace TrainingFPTCo.Controllers
 {
@@ -69,8 +70,56 @@ namespace TrainingFPTCo.Controllers
                 return RedirectToAction(nameof(DashboardController.Index), "Dashboard");
             }
         }
-           
-               
-        
+
+        [HttpGet]
+        public IActionResult Add()
+        {
+            AccountDetail account = new AccountDetail();
+            List<SelectListItem> itemRole = new List<SelectListItem>();
+            var roleViewModel = new RoleQuery().GetAllRoles(null, null);
+            foreach (var role in roleViewModel.RoleDetailList)
+            {
+                itemRole.Add(new SelectListItem
+                {
+                    Value = role.Id.ToString(),
+                    Text = role.Name
+                });
+            }
+            ViewBag.Roles = itemRole;
+            return View(account);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Add(AccountDetail account, IFormFile PosterImage)
+        {
+            //return Ok(ModelState);
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    int idAccount = new AccountQuery().InsertItemAccount(account.RoleId,account.UserName
+                        , account.Password,account.ExtraCode,account.Email,account.Phone,account.Address,account.FullName,account.Birthday,account.Gender, account.Status);
+                    if (idAccount > 0)
+                    {
+                        TempData["saveStatus"] = true;
+
+                    }
+                    else
+                    {
+                        TempData["saveStatus"] = false;
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    return Ok(ex.Message);
+                    TempData["saveStatus"] = false;
+                }
+                return RedirectToAction(nameof(AccountController.Index), "Account");
+            }
+            return View(account);
+        }
+
     }
 }

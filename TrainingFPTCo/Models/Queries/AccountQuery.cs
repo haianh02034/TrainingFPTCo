@@ -61,5 +61,48 @@ namespace TrainingFPTCo.Models.Queries
             }
             return account;
         }
+
+        //add
+        public int InsertItemAccount(int RoleId,
+                string UserName,
+                string Password,
+                string ExtraCode,
+                string Email,
+                string Phone,
+                string Address,
+                string FullName,
+                DateTime? Birthday,
+                string Gender,
+                string Status)
+        {
+            int lastInsertId = 0;
+            string sqlInsertAccount = "INSERT INTO [User]([RoleId],[UserName],[Password],[ExtraCode],[Email],[Phone],[Address],[FullName],[Birthday],[Gender],[Status],[CreatedAt]) " +
+                               "VALUES (@roleId, @userName, @password, @extraCode, @email, @phone, @address, @fullName, @birthday, @gender, @status, @createdAt); " +
+                               "SELECT SCOPE_IDENTITY()";
+            ;
+
+            //SELECT SCOPE_IDENTITY()  lay ra id vua dc them
+            using (SqlConnection connection = Database.GetSqlConnection())
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(sqlInsertAccount, connection);
+                command.Parameters.AddWithValue("@roleId", RoleId);
+                command.Parameters.AddWithValue("@userName", UserName ?? DBNull.Value.ToString());
+                command.Parameters.AddWithValue("@password", Password ?? DBNull.Value.ToString());
+                command.Parameters.AddWithValue("@extraCode", ExtraCode ?? DBNull.Value.ToString());
+                command.Parameters.AddWithValue("@email", Email ?? DBNull.Value.ToString());
+                command.Parameters.AddWithValue("@phone", Phone ?? DBNull.Value.ToString());
+                command.Parameters.AddWithValue("@address", Address ?? DBNull.Value.ToString());
+                command.Parameters.AddWithValue("@fullName", FullName ?? DBNull.Value.ToString());
+                command.Parameters.AddWithValue("@birthday", Birthday.Value.ToString("yyyy-MM-ddTHH:mm"));
+                command.Parameters.AddWithValue("@gender", Gender ?? DBNull.Value.ToString());
+                command.Parameters.AddWithValue("@status", Status ?? DBNull.Value.ToString());
+                command.Parameters.AddWithValue("@createdAt", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                lastInsertId = Convert.ToInt32(command.ExecuteScalar());
+                connection.Close();
+
+            }
+            return lastInsertId;
+        }
     }
 }
