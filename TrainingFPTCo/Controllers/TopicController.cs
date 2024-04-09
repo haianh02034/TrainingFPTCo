@@ -9,10 +9,83 @@ namespace TrainingFPTCo.Controllers
     public class TopicController : Controller
     {
         private readonly TrainingDbContext _dbContext;
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly string sessionRoleId;
 
-        public TopicController(TrainingDbContext dbContext)
+        public TopicController(TrainingDbContext dbContext, IHttpContextAccessor httpContextAccessor)
         {
             _dbContext = dbContext;
+            _httpContextAccessor = httpContextAccessor;
+            sessionRoleId = _httpContextAccessor.HttpContext.Session.GetString("SessionRoleId");
+        }
+
+        [HttpGet]
+        public IActionResult Add()
+        {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("SessionUserId")))
+            {
+                return RedirectToAction(nameof(LoginController.Index), "Login");
+            }
+            if (sessionRoleId != "4")
+            {
+                // Redirect to access denied page or return forbidden status
+                return RedirectToAction("AccessDenied", "Error");
+            }
+            else
+            {
+                TopicDetail model = new TopicDetail();
+                model.SessionRoleId = sessionRoleId;
+                return View(model);
+            }
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Add(TopicDetail topic, IFormFile PosterImage)
+        {
+            if (sessionRoleId != "4")
+            {
+                // Redirect to access denied page or return forbidden status
+                return RedirectToAction("AccessDenied", "Error");
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    // Upload file
+                    string uniquePoster = UploadFileHelper.UploadFile(PosterImage, "images");
+
+                    int idTopic = new TopicQuery().InsertItemTopic(
+                        topic.CourseId,
+                        topic.Name,
+                        topic.Description,
+                        topic.Status,
+                        topic.Documents,
+                        topic.AttachFile,
+                        uniquePoster,
+                        topic.TypeDocument
+                    );
+
+                    if (idTopic > 0)
+                    {
+                        TempData["saveStatus"] = true;
+                    }
+                    else
+                    {
+                        TempData["saveStatus"] = false;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    return Ok(ex.Message);
+                    TempData["saveStatus"] = false;
+                }
+
+                return RedirectToAction(nameof(TopicController.Index), "Topic");
+            }
+
+            return View(topic);
         }
 
         [HttpGet]

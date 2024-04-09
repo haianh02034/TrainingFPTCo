@@ -94,7 +94,7 @@ namespace TrainingFPTCo.Models.Queries
                 command.Parameters.AddWithValue("@phone", Phone ?? DBNull.Value.ToString());
                 command.Parameters.AddWithValue("@address", Address ?? DBNull.Value.ToString());
                 command.Parameters.AddWithValue("@fullName", FullName ?? DBNull.Value.ToString());
-                command.Parameters.AddWithValue("@birthday", Birthday.Value.ToString("yyyy-MM-ddTHH:mm"));
+                command.Parameters.AddWithValue("@birthday", Birthday);
                 command.Parameters.AddWithValue("@gender", Gender ?? DBNull.Value.ToString());
                 command.Parameters.AddWithValue("@status", Status ?? DBNull.Value.ToString());
                 command.Parameters.AddWithValue("@createdAt", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));

@@ -9,7 +9,13 @@
     Layout = "~/Views/Shared/_LayoutMain.cshtml";
 
 }
+@using Microsoft.AspNetCore.Session;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
 <div class="row">
+
+    <a class="nav-link" href="javascript:void(0)">
+        @HttpContextAccessor.HttpContext.Session.GetString("SessionRoleId")
+    </a>
     <div class="col-sm-12 col-md-12">
         <h2>Add Category page</h2>
         <a class="btn btn-primary " href="@Url.Action("Index","Category")">Back to List Categories</a>
@@ -21,6 +27,7 @@
         </div>
         <div class="card-body">
             <form enctype="multipart/form-data" asp-action="Add" class="mt-5">
+                <input type="hidden" asp-for="SessionRoleId" />
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
                         <div class="form-group mb-3">

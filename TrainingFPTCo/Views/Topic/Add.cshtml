@@ -1,0 +1,66 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model TrainingFPTCo.Models.TopicDetail;
+@{
+    ViewData["title"] = "Topics";
+    ViewData["breadcrumb"] = "Topic";
+    ViewData["breadcrumb_active"] = "Create new Topics";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+<div class="row">
+    <div class="col-sm-12 col-md-12">
+        <h2>Add Topic page</h2>
+        <a class="btn btn-primary " href="@Url.Action("Index","Topic")">Back to List Topics</a>
+    </div>
+
+    <div class="card mt-5">
+        <div class="card-header">
+            <h5>Create Topic</h5>
+        </div>
+        <div class="card-body">
+            <form enctype="multipart/form-data" asp-action="Add">
+                <input type="hidden" asp-for="SessionRoleId" />
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label">Topic Name</label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label">Description</label>
+                    <textarea asp-for="Description" class="form-control"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Status" class="control-label">Status</label>
+                    <select asp-for="Status" class="form-control">
+                        <option value="Active">Active</option>
+                        <option value="Inactive">Inactive</option>
+                    </select>
+                    <span asp-validation-for="Status" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Documents" class="control-label">Documents</label>
+                    <input asp-for="Documents" class="form-control" />
+                    <span asp-validation-for="Documents" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="AttachFile" class="control-label">Attach File</label>
+                    <input type="file" asp-for="AttachFile" class="form-control" />
+                    <span asp-validation-for="AttachFile" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PoterTopic" class="control-label">Poster Topic</label>
+                    <input type="file" asp-for="PoterTopic" class="form-control" />
+                    <span asp-validation-for="PoterTopic" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="TypeDocument" class="control-label">Type Document</label>
+                    <input asp-for="TypeDocument" class="form-control" />
+                    <span asp-validation-for="TypeDocument" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+</div>
+</div>
+</div>

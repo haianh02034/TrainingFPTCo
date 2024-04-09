@@ -3,58 +3,86 @@ using TrainingFPTCo.DataDBContext;
 using TrainingFPTCo.Models;
 using TrainingFPTCo.Models.Queries;
 using TrainingFPTCo.Helpers;
-
+using Microsoft.AspNetCore.Http;
 namespace TrainingFPTCo.Controllers
 {
     public class CategoryController : Controller
     {
+
         private readonly TrainingDbContext _dbContext;
-        public CategoryController(TrainingDbContext dbContext)
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly string sessionRoleId;
+
+        public CategoryController(TrainingDbContext dbContext, IHttpContextAccessor httpContextAccessor)
         {
             _dbContext = dbContext;
+            _httpContextAccessor = httpContextAccessor;
+            sessionRoleId = _httpContextAccessor.HttpContext.Session.GetString("SessionRoleId");
         }
+
         [HttpGet]
-        public IActionResult Index( string SearchString, string FilterStatus)
+        public IActionResult Index(string SearchString, string FilterStatus)
         {
             if (string.IsNullOrEmpty(HttpContext.Session.GetString("SessionUserId")))
             {
                 return RedirectToAction(nameof(LoginController.Index), "Login");
             }
-            else
             {
-                CategoryViewModel categoryModel = new CategoryViewModel();
-                categoryModel.CategoryDetailList = new List<CategoryDetail>();
-                var dataCategory = new CategoryQuery().GetAllCategories(SearchString, FilterStatus);
-                foreach (var item in dataCategory)
                 {
-                    categoryModel.CategoryDetailList.Add(new CategoryDetail
+                    CategoryViewModel categoryModel = new CategoryViewModel();
+                    categoryModel.CategoryDetailList = new List<CategoryDetail>();
+                    var dataCategory = new CategoryQuery().GetAllCategories(SearchString, FilterStatus);
+                    foreach (var item in dataCategory)
                     {
-                        Id = item.Id,
-                        Name = item.Name,
-                        Description = item.Description,
-                        Status = item.Status,
-                        PosterNameImage = item.PosterNameImage,
-                        CreatedAt = item.CreatedAt,
-                        UpdatedAt = item.UpdatedAt,
-                    });
-                }
-                ViewData["currentFilter"] = SearchString;
-                ViewBag.FilterStatus = FilterStatus;
+                        categoryModel.CategoryDetailList.Add(new CategoryDetail
+                        {
+                            Id = item.Id,
+                            Name = item.Name,
+                            Description = item.Description,
+                            Status = item.Status,
+                            PosterNameImage = item.PosterNameImage,
+                            CreatedAt = item.CreatedAt,
+                            UpdatedAt = item.UpdatedAt,
+                        });
+                    }
+                    ViewData["currentFilter"] = SearchString;
+                    ViewBag.FilterStatus = FilterStatus;
 
-                return View(categoryModel);
+                    return View(categoryModel);
+                }
             }
+        
         }
         [HttpGet]
         public IActionResult Add()
         {
-            CategoryDetail model = new CategoryDetail();
-            return View(model);  
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("SessionUserId")))
+            {
+                return RedirectToAction(nameof(LoginController.Index), "Login");
+            }
+            if (sessionRoleId != "4")
+            {
+                // Redirect to access denied page or return forbidden status
+                return RedirectToAction("AccessDenied", "Error");
+            }
+            else
+            {
+                CategoryDetail model = new CategoryDetail();
+                model.SessionRoleId = sessionRoleId;
+                //return Ok(model + sessionRoleId);
+                return View(model);
+            }
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Add(CategoryDetail category, IFormFile PosterImage)
         {
+
+            if (sessionRoleId != "4")
+            {              // Redirect to access denied page or return forbidden status
+                return RedirectToAction("AccessDenied", "Error");
+            }
             //return Ok(ModelState);
             if (ModelState.IsValid)
             {
@@ -82,11 +110,20 @@ namespace TrainingFPTCo.Controllers
                 return RedirectToAction(nameof(CategoryController.Index), "Category");
             }
             return View(category);
+
         }
 
         [HttpGet]
         public IActionResult Delete(int id = 0)
         {
+            CategoryDetail model = new CategoryDetail();
+            model.SessionRoleId = sessionRoleId;
+
+            if (sessionRoleId != "4")
+            {
+                // Redirect to access denied page or return forbidden status
+                return RedirectToAction("AccessDenied", "Error");
+            }
             bool deleteCategory = new CategoryQuery().DeleteItemCategoryById(id);
             if (deleteCategory)
             {
@@ -97,6 +134,7 @@ namespace TrainingFPTCo.Controllers
                 TempData["statusDelete"] = false;
 
             }
+
             return RedirectToAction(nameof(CategoryController.Index), "Category");
         }
       
@@ -104,6 +142,15 @@ namespace TrainingFPTCo.Controllers
         [HttpGet]
         public IActionResult Update(int id = 0)
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("SessionUserId")))
+            {
+                return RedirectToAction(nameof(LoginController.Index), "Login");
+            }
+            if (sessionRoleId != "4")
+            {
+                // Redirect to access denied page or return forbidden status
+                return RedirectToAction("AccessDenied", "Error");
+            }
             CategoryDetail category = new CategoryQuery().GetCategoryById(id);
             //if (category == null)
             //{
@@ -115,8 +162,12 @@ namespace TrainingFPTCo.Controllers
         }
         [HttpPost]
         public IActionResult Update(CategoryDetail category, IFormFile file)
-        {   
-            
+        {
+            if (sessionRoleId != "4")
+            {
+                // Redirect to access denied page or return forbidden status
+                return RedirectToAction("AccessDenied", "Error");
+            }
             try
             {
                 var detail = new CategoryQuery().GetCategoryById(category.Id);

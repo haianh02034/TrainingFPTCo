@@ -8,12 +8,19 @@
     ViewData["breadcrumb_active"] = "Create new Courses";
     Layout = "~/Views/Shared/_LayoutMain.cshtml";
 }
+@using Microsoft.AspNetCore.Session;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
 <div class="row">
+
+    <a class="nav-link" href="javascript:void(0)">
+        @HttpContextAccessor.HttpContext.Session.GetString("SessionRoleId")
+    </a>
+
     <div class="col-sm-12 col-md-12">
         <h2>Add Course page</h2>
-        <a class="btn btn-primary " href="@Url.Action("Index","Course")">Back to List Courses</a>
+        <a class="btn btn-primary " href="@Url.Action("Index","Courses")">Back to List Courses</a>
     </div>
-
+    
     <div class="card mt-5">
         <div class="card-header">
             <h5>Create Course</h5>
@@ -22,6 +29,8 @@
 
             <form enctype="multipart/form-data" asp-action="Add" class="mt-5">
                 <div class="row">
+                    <input type="hidden" asp-for="SessionRoleId" />
+
                     <div class="col-sm-12 col-md-6">
                         <div class="form-group mb-3">
                             <label asp-for="Name" class="control-label">Course Name</label>
@@ -71,8 +80,6 @@
                             <input asp-for="EndDate" type="date" class="form-control" />
                             @* <span asp-validation-for="EndDate" class="text-danger"></span> *@
                         </div>
-
-
 
                     </div>
                     <button class="my-3 btn btn-primary btn-sm mx-auto custom-width-button" type="submit" style=" width: 100px;">Save</button>

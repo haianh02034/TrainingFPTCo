@@ -53,6 +53,39 @@ namespace TrainingFPTCo.Models.Queries
             return topic;
         }
 
-        
+        public int InsertItemTopic(
+    int courseId,
+    string nameTopic,
+    string description,
+    string status,
+    string documents,
+    string attachFile,
+    string poterTopic,
+    string typeDocument
+)
+        {
+            int idTopic = 0;
+            using (SqlConnection connection = Database.GetSqlConnection())
+            {
+                string sqlQuery = "INSERT INTO [Topics] ([CourseId],[Name],[Description],[Status],[Documents],[AttachFile],[PoterTopic],[TypeDocument],[CreatedAt]) VALUES(@CourseId,@Name,@Description,@Status,@Documents,@AttachFile,@PoterTopic,@TypeDocument,@CreatedAt) SELECT SCOPE_IDENTITY() ";
+                SqlCommand cmd = new SqlCommand(sqlQuery, connection);
+                connection.Open();
+                cmd.Parameters.AddWithValue("@CourseId", courseId);
+                cmd.Parameters.AddWithValue("@Name", nameTopic);
+                cmd.Parameters.AddWithValue("@Description", description);
+                cmd.Parameters.AddWithValue("@Status", status);
+                cmd.Parameters.AddWithValue("@Documents", documents);
+                cmd.Parameters.AddWithValue("@AttachFile", attachFile);
+                cmd.Parameters.AddWithValue("@PoterTopic", poterTopic);
+                cmd.Parameters.AddWithValue("@TypeDocument", typeDocument);
+                cmd.Parameters.AddWithValue("@CreatedAt", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                idTopic = Convert.ToInt32(cmd.ExecuteScalar());
+                connection.Close();
+            }
+            return idTopic;
+        }
+
+
+
     }
 }

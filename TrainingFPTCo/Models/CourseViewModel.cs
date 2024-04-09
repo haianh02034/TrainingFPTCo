@@ -11,6 +11,8 @@ namespace TrainingFPTCo.Models
     }
     public class CourseDetail
     {
+        public string SessionRoleId { get; set; }
+
         public int Id { get; set; }
         public int CategoryId { get; set; }
 

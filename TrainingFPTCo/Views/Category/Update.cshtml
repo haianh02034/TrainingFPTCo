@@ -23,6 +23,8 @@
         <div class="card-body">
             <form enctype="multipart/form-data" asp-controller="Category" asp-action="Update" method="post" class="mt-5">
                 <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="SessionRoleId" />
+
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
                         <div class="form-group mb-3">

@@ -10,6 +10,7 @@ namespace TrainingFPTCo.Models
     }
     public class CategoryDetail
     {
+        public string SessionRoleId { get; set; }
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Enter name's Category,please ")]

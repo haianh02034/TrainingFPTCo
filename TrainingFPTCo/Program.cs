@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using TrainingFPTCo.DataDBContext;
 namespace TrainingFPTCo
 {
@@ -15,8 +15,9 @@ namespace TrainingFPTCo
             builder.Services.AddSession(options =>
             {
                 options.Cookie.Name = ".AdventureWorks.Session";
-                options.IdleTimeout = TimeSpan.FromSeconds(10);
-                //options.Cookie.HttpOnly = true;
+                options.IdleTimeout = TimeSpan.FromMinutes(30);
+                // Thiết lập cookie có thời gian sống lâu hơn so với session để session không bị xóa khi trình duyệt đóng
+                options.Cookie.HttpOnly = true;
                 options.Cookie.IsEssential = true;
             });
             builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();

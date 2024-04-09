@@ -5,6 +5,7 @@ using TrainingFPTCo.Models.Queries;
 using TrainingFPTCo.Helpers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using TrainingFPTCo.Migrations;
 
 namespace TrainingFPTCo.Controllers
 {
@@ -12,10 +13,14 @@ namespace TrainingFPTCo.Controllers
     {
 
         private readonly TrainingDbContext _dbContext;
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly string sessionRoleId;
 
-        public AccountController(TrainingDbContext dbContext)
+        public AccountController(TrainingDbContext dbContext, IHttpContextAccessor httpContextAccessor)
         {
             _dbContext = dbContext;
+            _httpContextAccessor = httpContextAccessor;
+            sessionRoleId = _httpContextAccessor.HttpContext.Session.GetString("SessionRoleId");
         }
 
         [HttpGet]
@@ -25,7 +30,7 @@ namespace TrainingFPTCo.Controllers
             {
                 return RedirectToAction(nameof(LoginController.Index), "Login");
             }
-            if(HttpContext.Session.GetString("SessionRoleId") == "1")
+            if (HttpContext.Session.GetString("SessionRoleId") == "1")
             {
                 AccountViewModel accountModel = new AccountViewModel();
                 accountModel.AccountDetailList = new List<AccountDetail>();
@@ -74,32 +79,42 @@ namespace TrainingFPTCo.Controllers
         [HttpGet]
         public IActionResult Add()
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("SessionUserId")))
+            {
+                return RedirectToAction(nameof(LoginController.Index), "Login");
+            }
+            if (sessionRoleId != "1")
+            {
+                // Redirect to access denied page or return forbidden status
+                return RedirectToAction("AccessDenied", "Error");
+            }
             AccountDetail account = new AccountDetail();
             List<SelectListItem> itemRole = new List<SelectListItem>();
-            var roleViewModel = new RoleQuery().GetAllRoles(null, null);
-            foreach (var role in roleViewModel.RoleDetailList)
+            var dataRole = new RoleQuery().GetAllRoles(null, null);
+            foreach (var item in dataRole.RoleDetailList) 
             {
                 itemRole.Add(new SelectListItem
                 {
-                    Value = role.Id.ToString(),
-                    Text = role.Name
+                    Value = item.Id.ToString(),
+                    Text = item.Name
                 });
             }
+            account.SessionRoleId = sessionRoleId;
             ViewBag.Roles = itemRole;
+
             return View(account);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Add(AccountDetail account, IFormFile PosterImage)
+        public async Task<IActionResult> Add(AccountDetail account)
         {
             //return Ok(ModelState);
             if (ModelState.IsValid)
             {
                 try
                 {
-                    int idAccount = new AccountQuery().InsertItemAccount(account.RoleId,account.UserName
-                        , account.Password,account.ExtraCode,account.Email,account.Phone,account.Address,account.FullName,account.Birthday,account.Gender, account.Status);
+                    int idAccount = new AccountQuery().InsertItemAccount(account.RoleId,account.UserName, account.Password,account.ExtraCode,account.Email,account.Phone,account.Address,account.FullName,account.Birthday,account.Gender, account.Status);
                     if (idAccount > 0)
                     {
                         TempData["saveStatus"] = true;
@@ -118,7 +133,22 @@ namespace TrainingFPTCo.Controllers
                 }
                 return RedirectToAction(nameof(AccountController.Index), "Account");
             }
+            List<SelectListItem> itemRole = new List<SelectListItem>();
+            var dataRole = new RoleQuery().GetAllRoles(null, null);
+            foreach (var item in dataRole.RoleDetailList)
+            {
+                itemRole.Add(new SelectListItem
+                {
+                    Value = item.Id.ToString(),
+                    Text = item.Name
+                });
+            }
+
+            ViewBag.Roles = itemRole;
+
+            //return Ok(account);
             return View(account);
+
         }
 
     }

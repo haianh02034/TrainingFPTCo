@@ -7,6 +7,8 @@
     }
     public class TraineeDetail
     {
+        public string SessionRoleId { get; set; }
+
         public string Name { get; set; }
         public string CourseName { get; set; }
         public string Description { get; set; }

@@ -7,6 +7,8 @@
     }
     public class TopicDetail
     {
+        public string SessionRoleId { get; set; }
+
         public int Id { get; set; }
         public int CourseId { get; set; }
 
