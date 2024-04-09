@@ -1,0 +1,24 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@using Microsoft.AspNetCore.Session;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
+@model TrainingFPTCo.Models.CourseViewModel;
+@{
+    ViewData["title"] = "Trainer";
+    ViewData["breadcrumb"] = "Home";
+    ViewData["breadcrumb_active"] = "Trainer";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+    bool statusAdd = Convert.ToBoolean(TempData["saveStatus"]);
+    // bool statusDel = Convert.ToBoolean(TempData["statusDelete"]);
+    bool statusUpdate = Convert.ToBoolean(TempData["statusUpdate"]);
+    var Timestamp = new DateTimeOffset(DateTime.UtcNow).ToUnixTimeSeconds();
+}
+
+
+<div class="row">
+    <div class="col-sm-12 col-md-12">
+        <h2>this is Trainer page</h2>
+    </div>
+</div>
+

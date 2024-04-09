@@ -1,0 +1,67 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+    *@
+@model TrainingFPTCo.Models.CategoryDetail;
+@{
+    ViewData["title"] = "Categories";
+    ViewData["breadcrumb"] = "Category";
+    ViewData["breadcrumb_active"] = "Update";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-sm-12 col-md-12">
+        <h2>Update Category</h2>
+        <a class="btn btn-primary" href="@Url.Action("Index", "Category")">Back to List Categories</a>
+    </div>
+
+    <div class="card mt-5">
+        <div class="card-header">
+            <h5>Update Category</h5>
+        </div>
+        <div class="card-body">
+            <form enctype="multipart/form-data" asp-controller="Category" asp-action="Update" method="post" class="mt-5">
+                <input type="hidden" asp-for="Id" />
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group mb-3">
+                            <label asp-for="Name" class="control-label">Category Name</label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Status" class="control-label">Status</label>
+                            <select asp-for="Status" class="form-control">
+                                <option value="Activated">Activated</option>
+                                <option value="Deactive">Deactive</option>
+                            </select>
+                            <span asp-validation-for="Status" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="PosterImage" class="control-label">Poster Image</label>
+                            <input type="file" asp-for="PosterImage" class="form-control" />
+                            @*                             <span asp-validation-for="PosterImage" class="text-danger"></span>
+
+                            *@
+                            <img class="img-fluid" width="50%" src="/uploads/images/@Model.PosterNameImage" />
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group mb-3">
+                            <label asp-for="Description" class="control-label">Description</label>
+                            <input asp-for="Description" class="form-control" />
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="my-3 btn btn-primary btn-sm mx-auto custom-width-button" type="submit" style="width: 100px;">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+

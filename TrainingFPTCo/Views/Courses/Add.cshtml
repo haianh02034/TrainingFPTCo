@@ -1,0 +1,85 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model TrainingFPTCo.Models.CourseDetail;
+@{
+    ViewData["title"] = "Courses";
+    ViewData["breadcrumb"] = "Course";
+    ViewData["breadcrumb_active"] = "Create new Courses";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+<div class="row">
+    <div class="col-sm-12 col-md-12">
+        <h2>Add Course page</h2>
+        <a class="btn btn-primary " href="@Url.Action("Index","Course")">Back to List Courses</a>
+    </div>
+
+    <div class="card mt-5">
+        <div class="card-header">
+            <h5>Create Course</h5>
+        </div>
+        <div class="card-body">
+
+            <form enctype="multipart/form-data" asp-action="Add" class="mt-5">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group mb-3">
+                            <label asp-for="Name" class="control-label">Course Name</label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                        <label asp-for="CategoryId" class="control-label">CategoryId </label>
+                        <select asp-for="CategoryId" class="form-control"
+                                asp-items="@(new SelectList(ViewBag.Categories, "Value", "Text"))">
+                        </select>
+                            <span asp-validation-for="CategoryId" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label asp-for="Status" class="control-label">Status</label>
+                            <select asp-for="Status" class="form-control">
+                                <option value="Activated">Activated</option>
+                                <option value="Deactive">Deactive</option>
+                            </select>
+                            <span asp-validation-for="Status" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Image" class="control-label">Poster Image</label>
+                            <input type="file" asp-for="Image" class="form-control" />
+                            <span asp-validation-for="Image" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6">
+                       
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Description" class="control-label">Description</label>
+                            <textarea rows="3" asp-for="Description" class="form-control"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="StartDate" class="control-label"></label>
+                            <input asp-for="StartDate" type="date" class="form-control" />
+                            <span asp-validation-for="StartDate" class="text-danger"></span>
+                        </div>   
+                        
+                        <div class="form-group mb-3">
+                            <label asp-for="EndDate" class="control-label"></label>
+                            <input asp-for="EndDate" type="date" class="form-control" />
+                            @* <span asp-validation-for="EndDate" class="text-danger"></span> *@
+                        </div>
+
+
+
+                    </div>
+                    <button class="my-3 btn btn-primary btn-sm mx-auto custom-width-button" type="submit" style=" width: 100px;">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
