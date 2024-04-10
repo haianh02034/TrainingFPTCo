@@ -48,12 +48,22 @@
             {
                 <tr>
                     <td>@topic.Id</td>
-                    <td>@topic.CourseId</td>
+                    <td>@topic.CourseName</td>
                     <td>@topic.Name</td>
                     <td>@topic.Description</td>
                     <td>@topic.Status</td>
-                    <td>@topic.Documents</td>
-                    <td>@topic.AttachFile</td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(topic.NameDocuments))
+                        {
+                            <img src="@Url.Content("~/uploads/documents/" + topic.Documents)" alt="@topic.NameDocuments" width="50" height="50" />
+
+                        }
+                        else
+                        {
+                            <span>No Documents</span>
+                        }
+                    </td>
+                    <td>@topic.NameAttachFile</td>
                     <td>@topic.TypeDocument</td>
                     <td>@topic.CreatedAt</td>
                     <td>@topic.UpdatedAt</td>

@@ -19,12 +19,19 @@
             <h5>Create Topic</h5>
         </div>
         <div class="card-body">
-            <form enctype="multipart/form-data" asp-action="Add">
+            <form enctype="multipart/form-data" asp-action="Add" class="mt-5">
                 <input type="hidden" asp-for="SessionRoleId" />
                 <div class="form-group">
                     <label asp-for="Name" class="control-label">Topic Name</label>
                     <input asp-for="Name" class="form-control" />
                     <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="CourseId" class="control-label">Course</label>
+                    <select asp-for="CourseId" class="form-control"
+                            asp-items="@(new SelectList(ViewBag.Courses, "Value", "Text"))">
+                    </select>
+                    <span asp-validation-for="CourseId" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label asp-for="Description" class="control-label">Description</label>
@@ -34,26 +41,31 @@
                 <div class="form-group">
                     <label asp-for="Status" class="control-label">Status</label>
                     <select asp-for="Status" class="form-control">
-                        <option value="Active">Active</option>
-                        <option value="Inactive">Inactive</option>
+                        <option value="Activated">Activated</option>
+                        <option value="Deactive">Deactive</option>
                     </select>
                     <span asp-validation-for="Status" class="text-danger"></span>
                 </div>
+
                 <div class="form-group">
                     <label asp-for="Documents" class="control-label">Documents</label>
-                    <input asp-for="Documents" class="form-control" />
+                    <input type="file" asp-for="Documents" class="form-control" />
                     <span asp-validation-for="Documents" class="text-danger"></span>
                 </div>
+
                 <div class="form-group">
                     <label asp-for="AttachFile" class="control-label">Attach File</label>
                     <input type="file" asp-for="AttachFile" class="form-control" />
                     <span asp-validation-for="AttachFile" class="text-danger"></span>
                 </div>
+
                 <div class="form-group">
-                    <label asp-for="PoterTopic" class="control-label">Poster Topic</label>
+                    <label asp-for="PoterTopic" class="control-label">PoterTopic</label>
                     <input type="file" asp-for="PoterTopic" class="form-control" />
                     <span asp-validation-for="PoterTopic" class="text-danger"></span>
                 </div>
+
+               
                 <div class="form-group">
                     <label asp-for="TypeDocument" class="control-label">Type Document</label>
                     <input asp-for="TypeDocument" class="form-control" />
@@ -61,6 +73,6 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Save</button>
             </form>
-</div>
-</div>
+        </div>
+    </div>
 </div>

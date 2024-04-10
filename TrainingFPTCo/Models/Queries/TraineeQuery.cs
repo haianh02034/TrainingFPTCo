@@ -35,8 +35,9 @@ namespace TrainingFPTCo.Models.Queries
                         top.Name = reader["Name"].ToString();
                         top.Description = reader["Description"].ToString();
                         top.Status = reader["Status"].ToString();
-                        top.Documents = reader["Documents"].ToString();
-                        top.AttachFile = reader["AttachFile"].ToString();
+                        top.NameDocuments = reader["Documents"].ToString();
+                        top.NameAttachFile = reader["AttachFile"].ToString();
+                        top.NamePoterTopic = reader["PoterTopic"].ToString();
                         top.TypeDocument = reader["TypeDocument"].ToString();
 
 

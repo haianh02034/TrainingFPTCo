@@ -59,6 +59,8 @@
                     </a>
                 </li>
             }
+            @if (HttpContextAccessor.HttpContext.Session.GetString("SessionRoleId") == "4")
+            {
             <li class="nav-item">
                 <a class="nav-link" href="@Url.Action("Index","Category")">
             <svg class="nav-icon">
@@ -78,8 +80,7 @@
                     </svg> Topic
                 </a>
             </li>
-             @if (HttpContextAccessor.HttpContext.Session.GetString("SessionRoleId") == "4")
-            {
+             
                 <li class="nav-item">
                     <a class="nav-link" href="@Url.Action("Index","Trainer")">
                         <svg class="nav-icon">
@@ -96,6 +97,30 @@
                     </a>
                 </li>
                 
+            }
+            @if (HttpContextAccessor.HttpContext.Session.GetString("SessionRoleId") == "3")
+            {
+
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Index","Topic")">
+                        <svg class="nav-icon">
+                            <use xlink:href="/training/vendors/coreui/icons/svg/free.svg#cil-pencil"></use>
+                        </svg> Topic
+                    </a>
+                </li>
+                       
+            }
+            @if (HttpContextAccessor.HttpContext.Session.GetString("SessionRoleId") == "2")
+            {
+
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Index","Courses")">
+                        <svg class="nav-icon">
+                            <use xlink:href="/training/vendors/coreui/icons/svg/free.svg#cil-pencil"></use>
+                        </svg> Coures
+                    </a>
+                </li>
+
             }
 
 

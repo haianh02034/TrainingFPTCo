@@ -3,6 +3,7 @@ using TrainingFPTCo.DataDBContext;
 using TrainingFPTCo.Models;
 using TrainingFPTCo.Models.Queries;
 using TrainingFPTCo.Helpers;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace TrainingFPTCo.Controllers
 {
@@ -19,74 +20,7 @@ namespace TrainingFPTCo.Controllers
             sessionRoleId = _httpContextAccessor.HttpContext.Session.GetString("SessionRoleId");
         }
 
-        [HttpGet]
-        public IActionResult Add()
-        {
-            if (string.IsNullOrEmpty(HttpContext.Session.GetString("SessionUserId")))
-            {
-                return RedirectToAction(nameof(LoginController.Index), "Login");
-            }
-            if (sessionRoleId != "4")
-            {
-                // Redirect to access denied page or return forbidden status
-                return RedirectToAction("AccessDenied", "Error");
-            }
-            else
-            {
-                TopicDetail model = new TopicDetail();
-                model.SessionRoleId = sessionRoleId;
-                return View(model);
-            }
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Add(TopicDetail topic, IFormFile PosterImage)
-        {
-            if (sessionRoleId != "4")
-            {
-                // Redirect to access denied page or return forbidden status
-                return RedirectToAction("AccessDenied", "Error");
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    // Upload file
-                    string uniquePoster = UploadFileHelper.UploadFile(PosterImage, "images");
-
-                    int idTopic = new TopicQuery().InsertItemTopic(
-                        topic.CourseId,
-                        topic.Name,
-                        topic.Description,
-                        topic.Status,
-                        topic.Documents,
-                        topic.AttachFile,
-                        uniquePoster,
-                        topic.TypeDocument
-                    );
-
-                    if (idTopic > 0)
-                    {
-                        TempData["saveStatus"] = true;
-                    }
-                    else
-                    {
-                        TempData["saveStatus"] = false;
-                    }
-                }
-                catch (Exception ex)
-                {
-                    return Ok(ex.Message);
-                    TempData["saveStatus"] = false;
-                }
-
-                return RedirectToAction(nameof(TopicController.Index), "Topic");
-            }
-
-            return View(topic);
-        }
+        
 
         [HttpGet]
         public IActionResult Index(string SearchString, string FilterStatus)
@@ -108,12 +42,12 @@ namespace TrainingFPTCo.Controllers
                     topicModel.TopicDetailList.Add(new TopicDetail
                     {
                         Id = item.Id,
-                        CourseId = item.CourseId,
+                        CourseName = item.CourseName,
                         Name = item.Name,
                         Description = item.Description,
                         Status = item.Status,
-                        Documents = item.Documents,
-                        AttachFile = item.AttachFile,
+                        NameDocuments = item.NameDocuments,
+                        NameAttachFile = item.NameAttachFile,
                         TypeDocument = item.TypeDocument,
                         CreatedAt = item.CreatedAt,
                         UpdatedAt = item.UpdatedAt,
@@ -129,6 +63,105 @@ namespace TrainingFPTCo.Controllers
             {
                 return RedirectToAction(nameof(DashboardController.Index), "Dashboard");
             }
+        }
+
+        [HttpGet]
+        public IActionResult Add()
+        {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("SessionUserId")))
+            {
+                return RedirectToAction(nameof(LoginController.Index), "Login");
+            }
+            if (sessionRoleId != "4")
+            {
+                // Redirect to access denied page or return forbidden status
+                return RedirectToAction("AccessDenied", "Error");
+            }
+            else
+            {
+                List<SelectListItem> itemCourses = new List<SelectListItem>();
+                var dataCourse = new CourseQuery().GetAllDataCourses();
+                foreach (var item in dataCourse)
+                {
+                    itemCourses.Add(new SelectListItem
+                    {
+                        Value = item.Id.ToString(),
+                        Text = item.Name
+                    });
+                }
+                ViewBag.Courses = itemCourses;
+
+                // Initialize topic detail object
+                TopicDetail topic = new TopicDetail();
+                topic.SessionRoleId = sessionRoleId;
+                return View(topic);
+            }
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Add(TopicDetail topic, IFormFile AttachFile, IFormFile Documents, IFormFile PoterTopic)
+        {
+            if (sessionRoleId != "4")
+            {
+                // Redirect to access denied page or return forbidden status
+                return RedirectToAction("AccessDenied", "Error");
+            }
+            //return Ok((ModelState.IsValid));
+            if (ModelState.IsValid)
+            {
+
+                try
+                {
+                    // Upload file
+                    string documents = UploadFileHelper.UploadFile(Documents, "documents");
+                    string video = UploadFileHelper.UploadFile(AttachFile, "videos");
+                    string image = UploadFileHelper.UploadFile(PoterTopic, "images");
+
+                    int idTopic = new TopicQuery().InsertItemTopic(
+                        topic.CourseId,
+                        topic.Name,
+                        topic.Description,
+                        topic.Status,
+                        documents,
+                        video,
+                        image,
+                        topic.TypeDocument
+                    );
+
+                    if (idTopic > 0)
+                    {
+                        TempData["saveStatus"] = true;
+                        return RedirectToAction(nameof(TopicController.Index), "Topic");
+                    }
+                    else
+                    {
+                        TempData["saveStatus"] = false;
+                        ModelState.AddModelError("", "Failed to save topic.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    TempData["saveStatus"] = false;
+                    ModelState.AddModelError("", "An error occurred while processing your request.");
+                }
+                return Ok(topic);
+                return RedirectToAction(nameof(TopicController.Index), "Topic");
+            }
+            List<SelectListItem> itemCourses = new List<SelectListItem>();
+            var dataCourse = new CourseQuery().GetAllDataCourses();
+            foreach (var item in dataCourse)
+            {
+                itemCourses.Add(new SelectListItem
+                {
+                    Value = item.Id.ToString(),
+                    Text = item.Name
+                });
+            }
+            ViewBag.Courses = itemCourses;
+
+            topic.SessionRoleId = sessionRoleId;
+            return View(topic);
         }
     }
 }

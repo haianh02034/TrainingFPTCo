@@ -107,6 +107,7 @@ namespace TrainingFPTCo.Controllers
                 // Redirect to access denied page or return forbidden status
                 return RedirectToAction("AccessDenied", "Error");
             }
+            return Ok(ModelState.IsValid);
             if (ModelState.IsValid)
             {
                 //xu ly insert coursr vafo database
