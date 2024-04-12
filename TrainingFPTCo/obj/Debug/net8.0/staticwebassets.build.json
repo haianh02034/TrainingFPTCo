@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XJA5iBHZhjsLetcvwdvmuvGVLQS5Kt7AspW1J3cIb4U=",
+  "Hash": "DeOr3zyaUKj+qOV/t+kJi26dcaM+izi7eoa+JFKRQos=",
   "Source": "TrainingFPTCo",
   "BasePath": "_content/TrainingFPTCo",
   "Mode": "Default",
@@ -24926,6 +24926,25 @@
       "OriginalItemSpec": "wwwroot\\uploads\\documents\\ba881c3c-9dc4-49f2-acdb-6431809f0aec_assignment-2-brief.docx"
     },
     {
+      "Identity": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\documents\\e7fe47a7-ea67-4632-a8e4-cebc667cb8b3_samplevideomp4-240p.mp4",
+      "SourceId": "TrainingFPTCo",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\",
+      "BasePath": "_content/TrainingFPTCo",
+      "RelativePath": "uploads/documents/e7fe47a7-ea67-4632-a8e4-cebc667cb8b3_samplevideomp4-240p.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\documents\\e7fe47a7-ea67-4632-a8e4-cebc667cb8b3_samplevideomp4-240p.mp4"
+    },
+    {
       "Identity": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\images\\03698036-a8b5-41a4-b6be-9a04315419e1_screenshot-2024-02-20-153704.png",
       "SourceId": "TrainingFPTCo",
       "SourceType": "Discovered",
@@ -24981,6 +25000,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\images\\09e16641-413c-4330-ad0a-70dd952d04d0_images.png"
+    },
+    {
+      "Identity": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\images\\1aa36564-fc5e-426c-8019-eb6c1fa8f5ea_demo.pdf",
+      "SourceId": "TrainingFPTCo",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\",
+      "BasePath": "_content/TrainingFPTCo",
+      "RelativePath": "uploads/images/1aa36564-fc5e-426c-8019-eb6c1fa8f5ea_demo.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\1aa36564-fc5e-426c-8019-eb6c1fa8f5ea_demo.pdf"
     },
     {
       "Identity": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\images\\1d8d6425-22f1-48af-94a2-82ca6829374c_screenshot-2024-03-12-125741.png",
@@ -25836,6 +25874,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\videos\\df0a28f6-c887-42d7-b3e9-369de4b42294_samplevideomp4-240p.mp4"
+    },
+    {
+      "Identity": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\videos\\e2e6c047-8024-4344-b0eb-173c68750bf5_samplevideomp4-240p.mp4",
+      "SourceId": "TrainingFPTCo",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\",
+      "BasePath": "_content/TrainingFPTCo",
+      "RelativePath": "uploads/videos/e2e6c047-8024-4344-b0eb-173c68750bf5_samplevideomp4-240p.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\videos\\e2e6c047-8024-4344-b0eb-173c68750bf5_samplevideomp4-240p.mp4"
     }
   ]
 }

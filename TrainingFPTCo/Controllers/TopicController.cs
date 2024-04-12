@@ -31,18 +31,18 @@ namespace TrainingFPTCo.Controllers
             {
                 return RedirectToAction(nameof(LoginController.Index), "Login");
             }
-            if (sessionRoleId == "1" || sessionRoleId == "2" || sessionRoleId == "4")
+            if ( sessionRoleId == "2" || sessionRoleId == "4")
             {
                 TopicViewModel topicModel = new TopicViewModel();
                 topicModel.TopicDetailList = new List<TopicDetail>();
-                var dataTopics = new TopicQuery().GetAllTopics(SearchString, FilterStatus);
+                var dataTopics = new TopicQuery().GetAllTopics();
 
                 foreach (var item in dataTopics)
                 {
                     topicModel.TopicDetailList.Add(new TopicDetail
                     {
                         Id = item.Id,
-                        CourseName = item.CourseName,
+                        CourseId = item.CourseId,
                         Name = item.Name,
                         Description = item.Description,
                         Status = item.Status,
@@ -145,7 +145,7 @@ namespace TrainingFPTCo.Controllers
                     TempData["saveStatus"] = false;
                     ModelState.AddModelError("", "An error occurred while processing your request.");
                 }
-                return Ok(topic);
+                //return Ok(topic);
                 return RedirectToAction(nameof(TopicController.Index), "Topic");
             }
             List<SelectListItem> itemCourses = new List<SelectListItem>();
@@ -163,5 +163,128 @@ namespace TrainingFPTCo.Controllers
             topic.SessionRoleId = sessionRoleId;
             return View(topic);
         }
+
+
+
+
+        [HttpGet]
+        public IActionResult Update(int id)
+        {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("SessionUserId")))
+            {
+                return RedirectToAction(nameof(LoginController.Index), "Login");
+            }
+            TopicDetail detail = new TopicQuery().GetDetailTopicById(id);
+            List<SelectListItem> itemCourses = new List<SelectListItem>();
+            var dataCourse = new CourseQuery().GetAllDataCourses();
+            foreach (var item in dataCourse)
+            {
+                itemCourses.Add(new SelectListItem
+                {
+                    Value = item.Id.ToString(),
+                    Text = item.Name
+                });
+            }
+            ViewBag.Courses = itemCourses;
+
+            // Initialize topic detail object
+            detail.SessionRoleId = sessionRoleId;
+            return View(detail);
+        }
+
+        [HttpPost]
+        public IActionResult Update(TopicDetail topicDetail, IFormFile AttachFile, IFormFile Documents, IFormFile PoterTopic)
+        {
+            try
+            {
+                var infoTopic = new TopicQuery().GetDetailTopicById(topicDetail.Id);
+                string documentsTopic = infoTopic.NameDocuments;
+                string fileTopic = infoTopic.NameAttachFile;
+                string imageTopic = infoTopic.NamePoterTopic;
+                // check xem nguoi co thay anh hay ko?
+                if (topicDetail.Documents != null)
+                {
+                    // co muon thay anh
+                    documentsTopic = UploadFileHelper.UploadFile(Documents, "documents");
+                }
+                if (topicDetail.AttachFile != null)
+                {
+                    fileTopic = UploadFileHelper.UploadFile(AttachFile, "videos");
+                }
+                if (topicDetail.PoterTopic != null)
+                {
+                    imageTopic = UploadFileHelper.UploadFile(PoterTopic, "images");
+                }
+                bool update = new TopicQuery().UpdateTopicById(
+                        topicDetail.CourseId,
+                        topicDetail.Name,
+                        topicDetail.Description,
+                        documentsTopic,
+                        fileTopic,
+                        imageTopic,
+                        topicDetail.TypeDocument,
+                        topicDetail.Status,
+                        topicDetail.Id
+
+                    );
+                if (update)
+                {
+                    TempData["updateStatus"] = true;
+                }
+                else
+                {
+                    TempData["updateStatus"] = false;
+                }
+                return RedirectToAction("Index", "Topic");
+            }
+            catch (Exception ex)
+            {
+                return Ok(ex.Message);
+            }
+             List<SelectListItem> itemCourses = new List<SelectListItem>();
+                var dataCourse = new CourseQuery().GetAllDataCourses();
+                foreach (var item in dataCourse)
+                {
+                    itemCourses.Add(new SelectListItem
+                    {
+                        Value = item.Id.ToString(),
+                        Text = item.Name
+                    });
+                }
+                ViewBag.Courses = itemCourses;
+
+                // Initialize topic detail object
+                TopicDetail topic = new TopicDetail();
+                topic.SessionRoleId = sessionRoleId;
+                return View(topic);
+        }
+
+
+        [HttpGet]
+
+        public IActionResult Delete(int id = 0)
+        {
+            TopicDetail topic = new TopicDetail();
+            topic.SessionRoleId = sessionRoleId;
+
+            if (sessionRoleId != "4")
+            {
+                // Redirect to access denied page or return forbidden status
+                return RedirectToAction("AccessDenied", "Error");
+            }
+            bool deleteTopic = new TopicQuery().DeleteItemTopicById(id);
+            if (deleteTopic)
+            {
+                TempData["statusDelete"] = true;
+            }
+            else
+            {
+                TempData["statusDelete"] = false;
+
+            }
+
+            return RedirectToAction(nameof(TopicController.Index), "Topic");
+        }
+
     }
 }

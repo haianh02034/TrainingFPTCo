@@ -48,22 +48,48 @@
             {
                 <tr>
                     <td>@topic.Id</td>
-                    <td>@topic.CourseName</td>
+                    <td>@topic.CourseId</td>
                     <td>@topic.Name</td>
                     <td>@topic.Description</td>
                     <td>@topic.Status</td>
+                 
                     <td>
                         @if (!string.IsNullOrEmpty(topic.NameDocuments))
                         {
-                            <img src="@Url.Content("~/uploads/documents/" + topic.Documents)" alt="@topic.NameDocuments" width="50" height="50" />
-
+                            <video width="320" height="240" controls>
+                                @if (topic.NameDocuments.EndsWith(".mp4"))
+                                {
+                                    <source src="@Url.Content("~/uploads/documents/" + topic.NameDocuments)" type="video/mp4">
+                                }
+                                else if (topic.NameDocuments.EndsWith(".mp3"))
+                                {
+                                <source src="@Url.Content("~/uploads/documents/" + topic.NameDocuments)" type="audio/mp3">
+                                }
+                                else if (topic.NameDocuments.EndsWith(".doc"))
+                                {
+                                <a href="@Url.Content("~/uploads/documents/" + topic.NameDocuments)">Download DOC</a>
+                                }
+                                Your browser does not support the video tag.
+                            </video>
                         }
                         else
                         {
-                            <span>No Documents</span>
+                            <span>No Video</span>
                         }
                     </td>
-                    <td>@topic.NameAttachFile</td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(topic.NameAttachFile))
+                        {
+                            <video width="320" height="240" controls>
+                                <source src="@Url.Content("~/uploads/videos/" + topic.NameAttachFile)" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        }
+                        else
+                        {
+                            <span>No Video</span>
+                        }
+                    </td>
                     <td>@topic.TypeDocument</td>
                     <td>@topic.CreatedAt</td>
                     <td>@topic.UpdatedAt</td>

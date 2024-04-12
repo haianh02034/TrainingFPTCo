@@ -31,7 +31,6 @@
                     HttpContext.Session.SetString("SessionEmail", model.Email);
                     HttpContext.Session.SetString("SessionFullname", model.FullName);
 
-
                 }
 
                 // chuyen den trang home

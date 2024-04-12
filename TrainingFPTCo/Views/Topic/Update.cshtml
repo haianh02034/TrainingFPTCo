@@ -1,0 +1,112 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model TrainingFPTCo.Models.TopicDetail;
+@{
+    ViewData["title"] = "Topics";
+    ViewData["breadcrumb"] = "Topic";
+    ViewData["breadcrumb_active"] = "Update new Topics";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+<div class="row">
+    <div class="col-sm-12 col-md-12">
+        <h2>Add Topic page</h2>
+        <a class="btn btn-primary " href="@Url.Action("Index","Topic")">Back to List Topics</a>
+    </div>
+
+    <div class="card mt-5">
+        <div class="card-header">
+            <h5>Update Topic</h5>
+        </div>
+        <div class="card-body">
+            <form enctype="multipart/form-data" method="post" asp-action="Update">
+                <input type="hidden" asp-for="SessionRoleId" />
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label">Topic Name</label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Name"></label>
+                    <input type="text" class="form-control" asp-for="Name" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                    <input type="hidden" asp-for="Id" />
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="CourseId" class="control-label">Course</label>
+                    <select asp-for="CourseId" class="form-control"
+                            asp-items="@(new SelectList(ViewBag.Courses, "Value", "Text"))">
+                    </select>
+                    <span asp-validation-for="CourseId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label">Description</label>
+                    <textarea asp-for="Description" class="form-control"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Status" class="control-label">Status</label>
+                    <select asp-for="Status" class="form-control">
+                        <option value="Activated">Activated</option>
+                        <option value="Deactive">Deactive</option>
+                    </select>
+                    <span asp-validation-for="Status" class="text-danger"></span>
+                </div>
+             @*    <div class="form-group mb-3">
+                    <label asp-for="Documents" class="control-label">Documents</label>
+                    <input type="file" asp-for="Documents" class="form-control" />
+                    <span asp-validation-for="Documents" class="text-danger"></span>
+                    @if (!string.IsNullOrEmpty(Model.NameDocuments))
+                    {
+                        <br />
+                        <a asp-action="DownloadDocument" asp-route-documentName="@Model.NameDocuments">Download</a>
+                    }
+                </div> *@
+                <div class="form-group mb-3">
+                    <label asp-for="Documents"></label>
+                    <input type="file" asp-for="Documents" class="form-control" />
+                    <span asp-validation-for="Documents"></span>
+                    <br />
+                    <video width="50%" controls>
+                        <source src="/uploads/documents/@Model.NameDocuments" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="AttachFile"></label>
+                    <input type="file" asp-for="AttachFile" class="form-control" />
+                    <span asp-validation-for="AttachFile"></span>
+                    <br />
+                    <video width="50%" controls>
+                        <source src="/uploads/videos/@Model.NameAttachFile" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="PoterTopic"></label>
+                    <input type="file" asp-for="PoterTopic" class="form-control" />
+                    <span asp-validation-for="PoterTopic"></span>
+                    <br />
+                    @if (!string.IsNullOrEmpty(Model.NamePoterTopic))
+                    {
+                        <a href="/uploads/images/@Model.NamePoterTopic" download>Download PDF</a>
+                    }
+                </div>
+              
+           
+               
+        
+
+
+                <div class="form-group">
+                    <label asp-for="TypeDocument" class="control-label">Type Document</label>
+                    <input asp-for="TypeDocument" class="form-control" />
+                    <span asp-validation-for="TypeDocument" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+        </div>
+    </div>
+</div>

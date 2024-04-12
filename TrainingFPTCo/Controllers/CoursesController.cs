@@ -186,6 +186,7 @@ namespace TrainingFPTCo.Controllers
                 });
             }
             ViewBag.Categories = itemCategories;
+            //return Ok(detail);
             return View(detail);
         }
 
