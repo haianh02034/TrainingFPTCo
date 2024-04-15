@@ -10,7 +10,7 @@ namespace TrainingFPTCo.Models
     }
     public class AccountDetail
     {
-        public string SessionRoleId { get; set; }
+        public string? SessionRoleId { get; set; }
 
         public int Id { get; set; }
 

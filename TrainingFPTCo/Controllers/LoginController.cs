@@ -1,6 +1,6 @@
 ﻿    using Microsoft.AspNetCore.Mvc;
-    using Microsoft.Identity.Client;
-    using TrainingFPTCo.Models;
+using Microsoft.Identity.Client;
+using TrainingFPTCo.Models;
     using TrainingFPTCo.Models.Queries;
     namespace TrainingFPTCo.Controllers
     {
@@ -31,11 +31,13 @@
                     HttpContext.Session.SetString("SessionEmail", model.Email);
                     HttpContext.Session.SetString("SessionFullname", model.FullName);
 
-                }
+                    new LoginQuery().UpdateLastLogin(model.id);
 
-                // chuyen den trang home
-        
-                {
+            }
+
+            // chuyen den trang home
+
+            {
                     return RedirectToAction(nameof(DashboardController.Index), "Dashboard");
                 }
 
@@ -48,14 +50,64 @@
                 //xoa sessuib da tai ra o login //quay ve trang dang nhap
                 if (!string.IsNullOrEmpty(HttpContext.Session.GetString("SessionUserId")))
                 {
-                    //xoa session
-                    HttpContext.Session.Remove("SessionUserId");
+                //xoa session
+                new LoginQuery().UpdateLastLogout(HttpContext.Session.GetString("SessionUserId"));
+
+                HttpContext.Session.Remove("SessionUserId");
                     HttpContext.Session.Remove("SessionUsername");
                     HttpContext.Session.Remove("SessionRoleId");
                     HttpContext.Session.Remove("SessionEmail");
                     HttpContext.Session.Remove("SessionFullname");
+
+                    HttpContext.Session.Clear();
+
+            }
+            return RedirectToAction(nameof(LoginController.Index), "Login");
+            }
+
+
+        [HttpGet]
+        public IActionResult Register()
+        {
+            
+            AccountDetail account = new AccountDetail();
+           
+
+            return View(account);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Register(AccountDetail account)
+        {
+            //return Ok(ModelState);
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    int idAccount = new LoginQuery().RegisterAccount(account.UserName, account.Password,  account.Email, account.Phone, account.Address, account.FullName, account.Birthday, account.Gender);
+                    if (idAccount > 0)
+                    {
+                        TempData["saveStatus"] = true;
+
+                    }
+                    else
+                    {
+                        TempData["saveStatus"] = false;
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    return Ok(ex.Message);
+                    TempData["saveStatus"] = false;
                 }
                 return RedirectToAction(nameof(LoginController.Index), "Login");
             }
+            
+         
+            return View(account);
+
         }
+    }
     }

@@ -19,13 +19,7 @@
         <div class="col-md-6">
             <input id="SearchString" value="@ViewData["currentFilter"]" type="text" name="SearchString" class="form-control" placeholder="Find by Name">
         </div>
-       @*  <div class="col-md-3">
-            <select id="statusSelect" name="FilterStatus" class="form-select">
-                <option value="">- Status -</option>
-                <option value="Activated" @(ViewBag.FilterStatus == "Activated" ? "selected" : "")>Activated</option>
-                <option value="Deactive" @(ViewBag.FilterStatus == "Deactive" ? "selected" : "")>Deactive</option>
-            </select>
-        </div> *@
+    
         <div class="col-md-3">
             <button id="searchButton" type="submit" class="btn btn-primary">Search</button>
         </div>
@@ -60,10 +54,10 @@
             <th>Last Name</th>
             <th>Birthday</th>
             <th>Gender</th>
-            <th>Education</th>
+           @*  <th>Education</th>
             <th>Programming Language</th>
             <th>TOEIC Score</th>
-            <th>IP Client</th>
+            <th>IP Client</th> *@
             <th>Last Login</th>
             <th>Last Logout</th>
             <th>Created At</th>
@@ -86,10 +80,10 @@
                         <td>@acc.LastName</td>
                         <td>@acc.Birthday</td>
                         <td>@acc.Gender</td>
-                        <td>@acc.Education</td>
+                        @* <td>@acc.Education</td>
                         <td>@acc.ProgramingLanguage</td>
                         <td>@acc.ToeicScore</td>
-                        <td>@acc.IPClient</td>
+                        <td>@acc.IPClient</td> *@
                         <td>@acc.LastLogin</td>
                         <td>@acc.LastLogout</td>
                         <td>@acc.CreatedAt</td>

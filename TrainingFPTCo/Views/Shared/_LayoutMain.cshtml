@@ -148,9 +148,7 @@
                             <a class="nav-link" href="javascript:void(0)">
                                 @HttpContextAccessor.HttpContext.Session.GetString("SessionFullname")
                             </a>
-                            <a class="nav-link" href="javascript:void(0)">
-                                @HttpContextAccessor.HttpContext.Session.GetString("SessionRoleId")
-                            </a>
+                           
                         }
                     </li>
           </ul>
@@ -238,10 +236,9 @@
           </nav>
         </div>
       </header>
-      <div class="body flex-grow-1 px-3">
-        <div class="container-lg">
+        <div class="body flex-grow-1 px-3" style="background-color: #FF7C47;">
+            <div class="container-lg">            
             @RenderBody()
-   
         </div>
       </div>
       <footer class="footer">

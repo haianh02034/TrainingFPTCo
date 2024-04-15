@@ -10,6 +10,7 @@ namespace TrainingFPTCo.Controllers
             {
                 return RedirectToAction(nameof(LoginController.Index), "Login");
             }
+            
             else { 
                 return View(); 
             }

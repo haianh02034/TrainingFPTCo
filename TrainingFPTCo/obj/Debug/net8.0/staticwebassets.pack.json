@@ -4229,6 +4229,14 @@
       "PackagePath": "staticwebassets\\training\\assets\\img\\full.jpg"
     },
     {
+      "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\training\\assets\\img\\pic1.svg",
+      "PackagePath": "staticwebassets\\training\\assets\\img\\pic1.svg"
+    },
+    {
+      "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\training\\assets\\img\\pic2.svg",
+      "PackagePath": "staticwebassets\\training\\assets\\img\\pic2.svg"
+    },
+    {
       "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\training\\css\\examples.css",
       "PackagePath": "staticwebassets\\training\\css\\examples.css"
     },

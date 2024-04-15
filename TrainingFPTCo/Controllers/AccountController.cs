@@ -151,5 +151,106 @@ namespace TrainingFPTCo.Controllers
 
         }
 
+        [HttpGet]
+        public IActionResult Delete(int id = 0)
+        {
+            AccountDetail model = new AccountDetail();
+            model.SessionRoleId = sessionRoleId;
+
+            if (sessionRoleId != "1")
+            {
+                // Redirect to access denied page or return forbidden status
+                return RedirectToAction("AccessDenied", "Error");
+            }
+            bool deleteAccount = new AccountQuery().DeleteAccountById(id);
+            if (deleteAccount)
+            {
+                TempData["statusDelete"] = true;
+            }
+            else
+            {
+                TempData["statusDelete"] = false;
+
+            }
+
+            return RedirectToAction(nameof(AccountController.Index), "Account");
+        }
+
+        [HttpGet]
+        public IActionResult Update(int id = 0)
+        {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("SessionUserId")))
+            {
+                return RedirectToAction(nameof(LoginController.Index), "Login");
+            }
+            if (sessionRoleId != "1")
+            {
+                // Redirect to access denied page or return forbidden status
+                return RedirectToAction("AccessDenied", "Error");
+            }
+            AccountDetail detail = new AccountQuery().GetAccountById(id);
+            List<SelectListItem> itemRoles = new List<SelectListItem>();
+            var dataRole = new RoleQuery().GetAllRoles(null, null);
+            foreach (var item in dataRole.RoleDetailList)
+            {
+                itemRoles.Add(new SelectListItem
+                {
+                    Value = item.Id.ToString(),
+                    Text = item.Name
+                });
+            }
+            ViewBag.Roles = itemRoles;
+            detail.SessionRoleId = sessionRoleId;
+
+            //return Ok(detail);
+            return View(detail);
+
+        }
+
+        [HttpPost]
+        public IActionResult Update(AccountDetail Account, IFormFile file)
+        {
+            if (sessionRoleId != "1")
+            {
+                // Redirect to access denied page or return forbidden status
+                return RedirectToAction("AccessDenied", "Error");
+            }
+            try
+            {
+                var detail = new AccountQuery().GetAccountById(Account.Id);
+
+                bool updateAccount = new AccountQuery().UpdateAccountById(
+                            Account.RoleId,
+                            Account.UserName,
+                            Account.Password,
+                            Account.ExtraCode,
+                            Account.Email,
+                            Account.Phone,
+                            Account.Address,
+                            Account.FullName,
+                            Account.Birthday,
+                            Account.Gender,
+                            Account.Status,
+                            Account.Id
+                        ); if (updateAccount)
+                {
+                    TempData["statusUpdate"] = true;
+                }
+                else
+                {
+                    TempData["statusUpdate"] = false;
+
+                }
+                return RedirectToAction(nameof(AccountController.Index), "Account");
+
+            }
+            catch (Exception ex)
+            {
+                //return Ok(ex.Message);
+                return View(Account);
+            }
+
+        }
+
     }
 }
