@@ -27,7 +27,36 @@
                             <input id="SearchString" value="@ViewData["currentFilter"]" type="text" name="SearchString" class="form-control" />
                         </div>
                     </div>
-
+                    <div class="col-md-5">
+                        <div class="mb-3">
+                            <label for="SearchCourseName" class="form-label">Find by Course Name:</label>
+                            <input id="SearchCourseName" value="@ViewData["currentFilter1"]" type="text" name="SearchCourseName" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="mb-3">
+                            <label for="statusSelect" class="form-label">Status:</label>
+                            <select id="statusSelect" name="FilterStatus" class="form-select">
+                                <option value="">-Status-</option>
+                                @if (ViewBag.FilterStatus == "Activated")
+                                {
+                                    <option value="Activated" selected="selected">Activated</option>
+                                }
+                                else
+                                {
+                                    <option value="Activated">Activated</option>
+                                }
+                                @if (ViewBag.FilterStatus == "Deactive")
+                                {
+                                    <option value="Deactive" selected="selected">Deactive</option>
+                                }
+                                else
+                                {
+                                    <option value="Deactive">Deactive</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
                     <div class="col-md-3">
                         <div class="mt-2 d-grid">
                             <label class="invisible">Search:</label>
@@ -79,7 +108,7 @@
         <thead class="table-success">
             <tr>
                 <th>Id</th>
-                <th>Course Id</th>
+                <th>Course Name</th>
                 <th>Name</th>
                 <th>Description</th>
                 <th>Status</th>

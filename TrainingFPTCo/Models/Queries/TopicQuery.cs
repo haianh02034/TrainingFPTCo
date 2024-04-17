@@ -4,7 +4,7 @@ namespace TrainingFPTCo.Models.Queries
 {
     public class TopicQuery
     {
-        public List<TopicDetail> GetAllTopics(string? SearchString, string? FilterStatus)
+        public List<TopicDetail> GetAllTopics(string? SearchString, string? FilterStatus ,string? SearchCourseName)
         {
             List<TopicDetail> topic = new List<TopicDetail>();
             using (SqlConnection connection = Database.GetSqlConnection())
@@ -20,10 +20,16 @@ namespace TrainingFPTCo.Models.Queries
                 {
                     sql += " AND [top].[Status] = @status";
                 }
+                if (!string.IsNullOrEmpty(SearchCourseName))
+                {
+                    // Thay đổi điều kiện tìm kiếm để tìm kiếm NameCourse từ bảng Courses nhưng vẫn lọc theo CourseId trong bảng Topics
+                    sql += " AND [top].[CourseId] IN (SELECT [Id] FROM [Courses] WHERE [Name] LIKE @search1)";
+                }
 
                 connection.Open();
                 SqlCommand command = new SqlCommand(sql, connection);
                 command.Parameters.AddWithValue("@search", "%" + SearchString + "%" ?? DBNull.Value.ToString());
+                command.Parameters.AddWithValue("@search1", "%" + SearchCourseName + "%" ?? DBNull.Value.ToString());
                 if (FilterStatus != null)
                 {
                     command.Parameters.AddWithValue("@status", FilterStatus ?? DBNull.Value.ToString());
@@ -35,6 +41,7 @@ namespace TrainingFPTCo.Models.Queries
                         TopicDetail top = new TopicDetail();
                         top.Id = Convert.ToInt32(reader["Id"]);
                         top.CourseId = Convert.ToInt32(reader["CourseId"]);
+                        top.CourseName = reader["NameCourse"].ToString();
                         top.Name = reader["Name"].ToString();
                         top.Description = reader["Description"].ToString();
                         top.Status = reader["Status"].ToString();

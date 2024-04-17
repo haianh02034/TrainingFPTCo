@@ -23,7 +23,7 @@ namespace TrainingFPTCo.Controllers
 
 
         [HttpGet]
-        public IActionResult Index(string SearchString, string FilterStatus)
+        public IActionResult Index(string SearchString, string FilterStatus ,string SearchCourseName)
         {
             var sessionRoleId = HttpContext.Session.GetString("SessionRoleId");
 
@@ -35,7 +35,7 @@ namespace TrainingFPTCo.Controllers
             {
                 TopicViewModel topicModel = new TopicViewModel();
                 topicModel.TopicDetailList = new List<TopicDetail>();
-                var dataTopics = new TopicQuery().GetAllTopics(SearchString, FilterStatus);
+                var dataTopics = new TopicQuery().GetAllTopics(SearchString, FilterStatus , SearchCourseName);
 
                 foreach (var item in dataTopics)
                 {
@@ -43,6 +43,7 @@ namespace TrainingFPTCo.Controllers
                     {
                         Id = item.Id,
                         CourseId = item.CourseId,
+                        CourseName = item.CourseName,
                         Name = item.Name,
                         Description = item.Description,
                         Status = item.Status,
@@ -55,6 +56,7 @@ namespace TrainingFPTCo.Controllers
                 }
 
                 ViewData["currentFilter"] = SearchString;
+                ViewData["currentFilter1"] = SearchCourseName;
                 ViewBag.FilterStatus = FilterStatus;
 
                 return View(topicModel);
