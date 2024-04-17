@@ -1,5 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 using TrainingFPTCo.DataDBContext;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace TrainingFPTCo.Models.Queries
 
@@ -124,14 +125,36 @@ namespace TrainingFPTCo.Models.Queries
             
             return detail;
         }
-        public List<CourseDetail> GetAllDataCourses()
+        public List<CourseDetail> GetAllDataCourses(string? SearchString, string? FilterStatus, string? SearchCategoryName)
         {
             List<CourseDetail> courses = new List<CourseDetail>();
             using (SqlConnection connection = Database.GetSqlConnection())
             {
                 string sql = "SELECT [co].*, [ca].[Name] AS [CategoryName] FROM [Courses] AS [co] INNER JOIN [Categories] AS [ca] ON [co].[CategoryId] = [ca].[Id] WHERE [co].[DeletedAt] IS NULL";
+                if (!string.IsNullOrEmpty(SearchString))
+                {
+                    sql += " AND [co].[Name] LIKE @search";
+                }
+
+                // Thêm điều kiện lọc theo trạng thái nếu FilterStatus được cung cấp
+                if (!string.IsNullOrEmpty(FilterStatus))
+                {
+                    sql += " AND [co].[Status] = @status";
+                }
+                if (!string.IsNullOrEmpty(SearchCategoryName))
+                {
+                    sql += " AND [co].[CategoryId] IN (SELECT [Id] FROM [Categories] WHERE [Name] LIKE @search1)";
+                }
                 connection.Open();
                 SqlCommand cmd = new SqlCommand(sql, connection);
+                cmd.Parameters.AddWithValue("@search", "%" + SearchString + "%" ?? DBNull.Value.ToString());
+                cmd.Parameters.AddWithValue("@search1", "%" + SearchCategoryName + "%" ?? DBNull.Value.ToString());
+
+                if (FilterStatus != null)
+                {
+                    cmd.Parameters.AddWithValue("@status", FilterStatus ?? DBNull.Value.ToString());
+                }
+               
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
                     while (reader.Read())

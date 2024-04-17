@@ -5,7 +5,7 @@ namespace TrainingFPTCo.Models
 {
     public class TopicViewModel
     {
-        public List<TopicDetail> TopicDetailList{ get; set; }
+        public List<TopicDetail> TopicDetailList { get; set; }
 
     }
     public class TopicDetail
@@ -25,7 +25,7 @@ namespace TrainingFPTCo.Models
         [AllowSizeFile(100 * 1024 * 1024)]
         public IFormFile? Documents { get; set; }
 
-        
+
 
         public string? NameAttachFile { get; set; }
 

@@ -10,19 +10,22 @@ namespace TrainingFPTCo.Models.Queries
             List<AccountDetail> account = new List<AccountDetail>();
             using (SqlConnection connection = Database.GetSqlConnection())
             {
-                string sqlData = string.Empty;
-                if (FilterStatus != null)
-                {
-                    sqlData = "SELECT* FROM [User] WHERE [UserName] LIKE @keyWord AND [DeletedAt] IS NULL AND [Status] =@status";
-                }
-                else
-                {
-                    sqlData = "SELECT [co].*, [ro].[Name] AS [RoleName] FROM [User] AS [co] LEFT JOIN [Role] AS [ro] ON [co].[RoleId] = [ro].[Id] WHERE [co].[DeletedAt] IS NULL";
+                string sqlData = "SELECT [co].*, [ro].[Name] AS [RoleName] FROM [User] AS [co] LEFT JOIN [Role] AS [ro] ON [co].[RoleId] = [ro].[Id] WHERE [co].[DeletedAt] IS NULL";
 
+                // Thêm điều kiện tìm kiếm nếu SearchString được cung cấp
+                if (!string.IsNullOrEmpty(SearchString))
+                {
+                    sqlData += " AND [co].[UserName] LIKE @search";
+                }
+
+                // Thêm điều kiện lọc theo trạng thái nếu FilterStatus được cung cấp
+                if (!string.IsNullOrEmpty(FilterStatus))
+                {
+                    sqlData += " AND [co].[Status] = @status";
                 }
                 connection.Open();
                 SqlCommand command = new SqlCommand(sqlData, connection);
-                command.Parameters.AddWithValue("@keyWord", "%" + SearchString + "%" ?? DBNull.Value.ToString());
+                command.Parameters.AddWithValue("@search", "%" + SearchString + "%" ?? DBNull.Value.ToString());
                 if (FilterStatus != null)
                 {
                     command.Parameters.AddWithValue("@status", FilterStatus ?? DBNull.Value.ToString());
@@ -137,7 +140,14 @@ namespace TrainingFPTCo.Models.Queries
                     while (reader.Read())
                     {
                         accountDetail.Id = Convert.ToInt32(reader["id"]);
-                        accountDetail.RoleId = Convert.ToInt32(reader["RoleId"]);
+                        if (reader["RoleId"] != DBNull.Value)
+                        {
+                            accountDetail.RoleId = Convert.ToInt32(reader["RoleId"]);
+                        }
+                        else
+                        {
+                            accountDetail.RoleId = 0;
+                        }
                         accountDetail.UserName = reader["UserName"].ToString();
                         accountDetail.Password = reader["Password"].ToString();
                         accountDetail.ExtraCode = reader["ExtraCode"].ToString();
@@ -174,12 +184,11 @@ namespace TrainingFPTCo.Models.Queries
             bool checkUpdate = false;
             using (SqlConnection connection = Database.GetSqlConnection())
             {
-                string sql = "UPDATE [User] SET [RoleId] = @RoleId, [UserName] = @UserName, [Password] = @Password, [ExtraCode] = @ExtraCode, [Email] = @Email, [Phone] = @Phone, [Address] = @Address, [FullName] = @FullName, [Birthday] = @Birthday, [Gender] = @Gender, [Status] = @Status, [UpdatedAt] = @UpdatedAt WHERE [Id] = @Id AND [DeletedAt] IS NULL";
+                string sql = "UPDATE [User] SET [RoleId] = @RoleId, [UserName] = @UserName, [ExtraCode] = @ExtraCode, [Email] = @Email, [Phone] = @Phone, [Address] = @Address, [FullName] = @FullName, [Birthday] = @Birthday, [Gender] = @Gender, [Status] = @Status, [UpdatedAt] = @UpdatedAt WHERE [Id] = @Id AND [DeletedAt] IS NULL";
                 connection.Open();
                 SqlCommand cmd = new SqlCommand(sql, connection);
                 cmd.Parameters.AddWithValue("@RoleId", roleId);
                 cmd.Parameters.AddWithValue("@UserName", userName);
-                cmd.Parameters.AddWithValue("@Password", password ?? DBNull.Value.ToString());
                 cmd.Parameters.AddWithValue("@ExtraCode", extraCode ?? DBNull.Value.ToString());
                 cmd.Parameters.AddWithValue("@Email", email ?? DBNull.Value.ToString());
                 cmd.Parameters.AddWithValue("@Phone", phone ?? DBNull.Value.ToString());

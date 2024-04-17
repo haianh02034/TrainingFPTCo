@@ -23,7 +23,7 @@ namespace TrainingFPTCo.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult Index(string SearchString, string FilterStatus ,string SearchCategoryName)
         {
             if (string.IsNullOrEmpty(HttpContext.Session.GetString("SessionUserId")))
             {
@@ -35,7 +35,7 @@ namespace TrainingFPTCo.Controllers
             {
                 CourseViewModel courseModel = new CourseViewModel();
                 courseModel.CourseDetailList = new List<CourseDetail>();
-                var dataCourse = new CourseQuery().GetAllDataCourses();
+                var dataCourse = new CourseQuery().GetAllDataCourses(SearchString, FilterStatus, SearchCategoryName);
                 foreach (var item in dataCourse)
                 {
                     courseModel.CourseDetailList.Add(new CourseDetail
@@ -53,8 +53,11 @@ namespace TrainingFPTCo.Controllers
                         UpdatedAt = item.UpdatedAt,
                     });
                 }
+                ViewData["currentFilter"] = SearchString;
+                ViewData["currentFilter1"] = SearchCategoryName;
 
-
+                ViewBag.FilterStatus = FilterStatus;
+                //return Ok (courseModel);
                 return View(courseModel);
             }
             else
@@ -79,7 +82,7 @@ namespace TrainingFPTCo.Controllers
             else
             {
                 List<SelectListItem> itemCategories = new List<SelectListItem>();
-                var dataCategory = new CategoryQuery().GetAllCategories(null, null);
+                var dataCategory = new CategoryQuery().GetAllCategories("", "");
                 foreach (var item in dataCategory)
                 {
                     itemCategories.Add(new SelectListItem
@@ -107,7 +110,7 @@ namespace TrainingFPTCo.Controllers
                 // Redirect to access denied page or return forbidden status
                 return RedirectToAction("AccessDenied", "Error");
             }
-            return Ok(ModelState.IsValid);
+            //return Ok(ModelState.IsValid);
             if (ModelState.IsValid)
             {
                 //xu ly insert coursr vafo database
@@ -136,7 +139,7 @@ namespace TrainingFPTCo.Controllers
             }
 
             List<SelectListItem> itemCategories = new List<SelectListItem>();
-            var dataCategory = new CategoryQuery().GetAllCategories(null, null);
+            var dataCategory = new CategoryQuery().GetAllCategories("", "");
             foreach (var item in dataCategory)
             {
                 itemCategories.Add(new SelectListItem
@@ -176,7 +179,7 @@ namespace TrainingFPTCo.Controllers
             }
             CourseDetail detail =new CourseQuery().GetDetailCourseById(id);
             List<SelectListItem> itemCategories = new List<SelectListItem>();
-            var dataCategory = new CategoryQuery().GetAllCategories(null, null);
+            var dataCategory = new CategoryQuery().GetAllCategories("", "");
             foreach (var item in dataCategory)
             {
                 itemCategories.Add(new SelectListItem
@@ -228,7 +231,7 @@ namespace TrainingFPTCo.Controllers
                 return Ok(ex.Message);
             }
             List<SelectListItem> itemCategories = new List<SelectListItem>();
-            var dataCategory = new CategoryQuery().GetAllCategories(null, null);
+            var dataCategory = new CategoryQuery().GetAllCategories("", "");
             foreach (var item in dataCategory)
             {
                 itemCategories.Add(new SelectListItem

@@ -4,17 +4,30 @@ namespace TrainingFPTCo.Models.Queries
 {
     public class TopicQuery
     {
-        public List<TopicDetail> GetAllTopics()
+        public List<TopicDetail> GetAllTopics(string? SearchString, string? FilterStatus)
         {
             List<TopicDetail> topic = new List<TopicDetail>();
             using (SqlConnection connection = Database.GetSqlConnection())
             {
-             string sql = "SELECT [top].*, [co].[Name] AS [NameCourse] FROM [Topics] AS [top] INNER JOIN [Courses] AS [co] ON [top].[CourseId] = [co].[Id] WHERE [top].[DeletedAt] IS NULL";
+                string sql = "SELECT [top].*, [co].[Name] AS [NameCourse] FROM [Topics] AS [top] INNER JOIN [Courses] AS [co] ON [top].[CourseId] = [co].[Id] WHERE [top].[DeletedAt] IS NULL";
+                if (!string.IsNullOrEmpty(SearchString))
+                {
+                    sql += " AND [top].[Name] LIKE @search";
+                }
 
-             
+                // Thêm điều kiện lọc theo trạng thái nếu FilterStatus được cung cấp
+                if (!string.IsNullOrEmpty(FilterStatus))
+                {
+                    sql += " AND [top].[Status] = @status";
+                }
+
                 connection.Open();
                 SqlCommand command = new SqlCommand(sql, connection);
-              
+                command.Parameters.AddWithValue("@search", "%" + SearchString + "%" ?? DBNull.Value.ToString());
+                if (FilterStatus != null)
+                {
+                    command.Parameters.AddWithValue("@status", FilterStatus ?? DBNull.Value.ToString());
+                }
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
                     while (reader.Read())

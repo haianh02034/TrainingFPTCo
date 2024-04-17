@@ -90,7 +90,8 @@ namespace TrainingFPTCo.Controllers
             }
             AccountDetail account = new AccountDetail();
             List<SelectListItem> itemRole = new List<SelectListItem>();
-            var dataRole = new RoleQuery().GetAllRoles(null, null);
+
+            var dataRole = new RoleQuery().GetAllRoles("", "");
             foreach (var item in dataRole.RoleDetailList) 
             {
                 itemRole.Add(new SelectListItem
@@ -134,7 +135,7 @@ namespace TrainingFPTCo.Controllers
                 return RedirectToAction(nameof(AccountController.Index), "Account");
             }
             List<SelectListItem> itemRole = new List<SelectListItem>();
-            var dataRole = new RoleQuery().GetAllRoles(null, null);
+            var dataRole = new RoleQuery().GetAllRoles("", "");
             foreach (var item in dataRole.RoleDetailList)
             {
                 itemRole.Add(new SelectListItem
@@ -190,7 +191,7 @@ namespace TrainingFPTCo.Controllers
             }
             AccountDetail detail = new AccountQuery().GetAccountById(id);
             List<SelectListItem> itemRoles = new List<SelectListItem>();
-            var dataRole = new RoleQuery().GetAllRoles(null, null);
+            var dataRole = new RoleQuery().GetAllRoles("", "");
             foreach (var item in dataRole.RoleDetailList)
             {
                 itemRoles.Add(new SelectListItem

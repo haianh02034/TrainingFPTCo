@@ -7,22 +7,70 @@
     ViewData["breadcrumb"] = "Home";
     ViewData["breadcrumb_active"] = "Topics";
     Layout = "~/Views/Shared/_LayoutMain.cshtml";
+    bool statusAdd = Convert.ToBoolean(TempData["saveStatus"]);
+    bool statusDel = Convert.ToBoolean(TempData["statusDelete"]);
+    bool statusUpdate = Convert.ToBoolean(TempData["statusUpdate"]);
+
 }
 
 <div class="row">
     <div class="col-sm-12 col-md-12">
         <h2>This is Topics page</h2>
         <a class="btn btn-primary" href="@Url.Action("Add","Topic")">Add new Topic</a>
-        <form asp-action="Index" method="get" class="mb-3">
-            <div class="row">
-                <div class="col-md-6">
-                    <input id="SearchString" value="@ViewData["currentFilter"]" type="text" name="SearchString" class="form-control" placeholder="Find by Name">
-                </div>
-                <div class="col-md-3">
-                    <button id="searchButton" type="submit" class="btn btn-primary">Search</button>
+        <form id="searchForm" asp-action="Index" method="get" class="my-3">
+
+            <div class="from-actions no-color col-12">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="mb-3">
+                            <label for="SearchString" class="form-label">Find by Name:</label>
+                            <input id="SearchString" value="@ViewData["currentFilter"]" type="text" name="SearchString" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="mt-2 d-grid">
+                            <label class="invisible">Search:</label>
+                            <button id="searchButton" type="submit" class="btn btn-primary btnsmall mb-0">Search</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </form>
+        @if (TempData["saveStatus"] != null)
+        {
+            @if (statusAdd)
+            {
+                <div class="text-success my-3"> Add Successfully </div>
+            }
+            else
+            {
+                <div class="text-danger my-3"> Add Failure </div>
+            }
+        }
+         @if (TempData["statusDelete"] != null)
+        {
+        @if (statusDel)
+        {
+        <div class="text-success my-3"> Delete Successfully </div>
+        }
+        else
+        {
+        <div class="text-danger my-3"> Delete Failure </div>
+        }
+        }
+        @if (TempData["statusUpdate"] != null)
+        {
+            @if (statusUpdate)
+            {
+                <div class="text-success my-3"> Update Successfully </div>
+            }
+            else
+            {
+                <div class="text-danger my-3"> Update Failure </div>
+            }
+        }
+
     </div>
 </div>
 
@@ -48,7 +96,7 @@
             {
                 <tr>
                     <td>@topic.Id</td>
-                    <td>@topic.CourseId</td>
+                    <td>@topic.CourseName</td>
                     <td>@topic.Name</td>
                     <td>@topic.Description</td>
                     <td>@topic.Status</td>
@@ -56,25 +104,35 @@
                     <td>
                         @if (!string.IsNullOrEmpty(topic.NameDocuments))
                         {
-                            <video width="320" height="240" controls>
-                                @if (topic.NameDocuments.EndsWith(".mp4"))
-                                {
+                            @if (topic.NameDocuments.EndsWith(".mp4"))
+                            {
+                                <video width="320" height="240" controls>
                                     <source src="@Url.Content("~/uploads/documents/" + topic.NameDocuments)" type="video/mp4">
-                                }
-                                else if (topic.NameDocuments.EndsWith(".mp3"))
-                                {
-                                <source src="@Url.Content("~/uploads/documents/" + topic.NameDocuments)" type="audio/mp3">
-                                }
-                                else if (topic.NameDocuments.EndsWith(".doc"))
-                                {
-                                <a href="@Url.Content("~/uploads/documents/" + topic.NameDocuments)">Download DOC</a>
-                                }
-                                Your browser does not support the video tag.
-                            </video>
+                                </video>
+                            }
+                            else if (topic.NameDocuments.EndsWith(".mp3"))
+                            {
+                                <audio controls>
+                                    <source src="@Url.Content("~/uploads/documents/" + topic.NameDocuments)" type="audio/mp3">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            }
+                            else if (topic.NameDocuments.EndsWith(".doc"))
+                            {
+                                <a href="@Url.Content("~/uploads/documents/" + topic.NameDocuments)" download>Download DOC</a>
+                            }
+                            else if (topic.NameDocuments.EndsWith(".pdf"))
+                            {
+                                <a href="@Url.Content("~/uploads/documents/" + topic.NameDocuments)" download>Download PDF</a>
+                            }
+                            else
+                            {
+                                <span>Unsupported file format</span>
+                            }
                         }
                         else
                         {
-                            <span>No Video</span>
+                            <span>No file available</span>
                         }
                     </td>
                     <td>

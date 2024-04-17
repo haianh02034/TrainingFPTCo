@@ -20944,6 +20944,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\TrainingFPTCo.bundle.scp.css))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\136da2a7-b497-405a-b8c6-fb7b090c702a_introductionchaomungbandenvoibaivietnay32e407.mp3))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/136da2a7-b497-405a-b8c6-fb7b090c702a_introductionchaomungbandenvoibaivietnay32e407.mp3</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\136da2a7-b497-405a-b8c6-fb7b090c702a_introductionchaomungbandenvoibaivietnay32e407.mp3))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\17d70ee8-c3dc-41d4-bdff-9fef9f4f8ea6_unit-30-assignment-2-frontsheet-1.docx))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/17d70ee8-c3dc-41d4-bdff-9fef9f4f8ea6_unit-30-assignment-2-frontsheet-1.docx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\17d70ee8-c3dc-41d4-bdff-9fef9f4f8ea6_unit-30-assignment-2-frontsheet-1.docx))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\20c68baa-3d66-473c-8c0f-a356e9e12e7a_samplevideomp4-240p.mp4))">
       <SourceType>Package</SourceType>
       <SourceId>TrainingFPTCo</SourceId>
@@ -20959,6 +20991,38 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\20c68baa-3d66-473c-8c0f-a356e9e12e7a_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\25436aec-8a76-4185-b55e-41f68fb2f421_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/25436aec-8a76-4185-b55e-41f68fb2f421_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\25436aec-8a76-4185-b55e-41f68fb2f421_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\2b5f7029-9d6f-4236-b823-534b9d63b1b0_traningcofpt-1.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/2b5f7029-9d6f-4236-b823-534b9d63b1b0_traningcofpt-1.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\2b5f7029-9d6f-4236-b823-534b9d63b1b0_traningcofpt-1.pdf))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\32ac6875-2526-4864-ab35-087d246a0b5e_assignment-2-brief.docx))">
       <SourceType>Package</SourceType>
@@ -20976,6 +21040,246 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\32ac6875-2526-4864-ab35-087d246a0b5e_assignment-2-brief.docx))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\36f43732-afb5-4a85-87eb-ca0aebb20e46_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/36f43732-afb5-4a85-87eb-ca0aebb20e46_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\36f43732-afb5-4a85-87eb-ca0aebb20e46_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\4f7602d1-d101-4093-b18d-cc6a0d5da95a_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/4f7602d1-d101-4093-b18d-cc6a0d5da95a_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\4f7602d1-d101-4093-b18d-cc6a0d5da95a_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\555f17a5-6f2c-4296-81ef-0ea96d2367e7_nguyen-hai-anh-cv.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/555f17a5-6f2c-4296-81ef-0ea96d2367e7_nguyen-hai-anh-cv.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\555f17a5-6f2c-4296-81ef-0ea96d2367e7_nguyen-hai-anh-cv.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\5b1eeeb9-54f5-45b1-a448-d7d2dec919f0_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/5b1eeeb9-54f5-45b1-a448-d7d2dec919f0_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\5b1eeeb9-54f5-45b1-a448-d7d2dec919f0_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\6c54e380-7f5c-4f86-a96c-95f7332679de_nguyen-hai-anh-cv.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/6c54e380-7f5c-4f86-a96c-95f7332679de_nguyen-hai-anh-cv.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\6c54e380-7f5c-4f86-a96c-95f7332679de_nguyen-hai-anh-cv.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\6fd6885e-dcdf-472f-ac24-563b534112c2_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/6fd6885e-dcdf-472f-ac24-563b534112c2_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\6fd6885e-dcdf-472f-ac24-563b534112c2_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\709f87ed-87c2-4e34-ad9d-6fde64a56112_nguyen-hai-anh-cv.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/709f87ed-87c2-4e34-ad9d-6fde64a56112_nguyen-hai-anh-cv.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\709f87ed-87c2-4e34-ad9d-6fde64a56112_nguyen-hai-anh-cv.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\7791fa5b-5381-4f10-928d-c2bcd2ae02d8_traningcofpt-1.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/7791fa5b-5381-4f10-928d-c2bcd2ae02d8_traningcofpt-1.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\7791fa5b-5381-4f10-928d-c2bcd2ae02d8_traningcofpt-1.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\8cf5aba1-b74b-4ba6-a457-0ab781a701e1_traningcofpt-1.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/8cf5aba1-b74b-4ba6-a457-0ab781a701e1_traningcofpt-1.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\8cf5aba1-b74b-4ba6-a457-0ab781a701e1_traningcofpt-1.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\94e67750-b906-4090-a606-4bbb607471ab_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/94e67750-b906-4090-a606-4bbb607471ab_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\94e67750-b906-4090-a606-4bbb607471ab_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\9a7b358a-f827-4b2c-b156-c5f14d664581_unit-30-assignment-2-frontsheet-1.docx))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/9a7b358a-f827-4b2c-b156-c5f14d664581_unit-30-assignment-2-frontsheet-1.docx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\9a7b358a-f827-4b2c-b156-c5f14d664581_unit-30-assignment-2-frontsheet-1.docx))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\a2ef8d29-489c-449f-a876-18bb17401698_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/a2ef8d29-489c-449f-a876-18bb17401698_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\a2ef8d29-489c-449f-a876-18bb17401698_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\a9e67cbd-5c62-4040-a9dc-b588a610b89f_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/a9e67cbd-5c62-4040-a9dc-b588a610b89f_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\a9e67cbd-5c62-4040-a9dc-b588a610b89f_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\b2b7745a-8d62-44a9-89b6-59f217820af5_traningcofpt-1.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/b2b7745a-8d62-44a9-89b6-59f217820af5_traningcofpt-1.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\b2b7745a-8d62-44a9-89b6-59f217820af5_traningcofpt-1.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\b3712299-896c-42c7-8daa-7ac984678030_nguyen-hai-anh-cv.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/b3712299-896c-42c7-8daa-7ac984678030_nguyen-hai-anh-cv.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\b3712299-896c-42c7-8daa-7ac984678030_nguyen-hai-anh-cv.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\ba881c3c-9dc4-49f2-acdb-6431809f0aec_assignment-2-brief.docx))">
       <SourceType>Package</SourceType>
       <SourceId>TrainingFPTCo</SourceId>
@@ -20991,6 +21295,86 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\ba881c3c-9dc4-49f2-acdb-6431809f0aec_assignment-2-brief.docx))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\c08af76a-d9b2-4a3b-98f5-706c2950a5a2_nguyen-hai-anh-cv.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/c08af76a-d9b2-4a3b-98f5-706c2950a5a2_nguyen-hai-anh-cv.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\c08af76a-d9b2-4a3b-98f5-706c2950a5a2_nguyen-hai-anh-cv.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\c50a2e79-7090-4555-94d2-1a57934659c6_unit-30-assignment-2-frontsheet-1.docx))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/c50a2e79-7090-4555-94d2-1a57934659c6_unit-30-assignment-2-frontsheet-1.docx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\c50a2e79-7090-4555-94d2-1a57934659c6_unit-30-assignment-2-frontsheet-1.docx))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\cc14c071-17a2-403f-8d06-e6ff186fc214_introductionchaomungbandenvoibaivietnay32e407.mp3))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/cc14c071-17a2-403f-8d06-e6ff186fc214_introductionchaomungbandenvoibaivietnay32e407.mp3</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\cc14c071-17a2-403f-8d06-e6ff186fc214_introductionchaomungbandenvoibaivietnay32e407.mp3))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\d427ca7d-3a52-49fe-a5b0-163a245d2a9f_unit-30-assignment-2-frontsheet-1.docx))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/d427ca7d-3a52-49fe-a5b0-163a245d2a9f_unit-30-assignment-2-frontsheet-1.docx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\d427ca7d-3a52-49fe-a5b0-163a245d2a9f_unit-30-assignment-2-frontsheet-1.docx))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\dd17a0c4-7f83-4b01-b9b7-072afc553fe1_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/documents/dd17a0c4-7f83-4b01-b9b7-072afc553fe1_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\dd17a0c4-7f83-4b01-b9b7-072afc553fe1_samplevideomp4-240p.mp4))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\documents\e7fe47a7-ea67-4632-a8e4-cebc667cb8b3_samplevideomp4-240p.mp4))">
       <SourceType>Package</SourceType>
@@ -21040,6 +21424,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\038c521e-7b5f-436c-8820-84d6612f7380_nguyen-hai-anh-12---copy.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\039f9e9b-b6be-4f95-b6dd-35aeda08b9ce_traningcofpt-1.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/images/039f9e9b-b6be-4f95-b6dd-35aeda08b9ce_traningcofpt-1.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\039f9e9b-b6be-4f95-b6dd-35aeda08b9ce_traningcofpt-1.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\09e16641-413c-4330-ad0a-70dd952d04d0_images.png))">
       <SourceType>Package</SourceType>
       <SourceId>TrainingFPTCo</SourceId>
@@ -21055,6 +21455,38 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\09e16641-413c-4330-ad0a-70dd952d04d0_images.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\12c7de9e-bfc7-43fc-9358-7353569d9831_traningcofpt-1.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/images/12c7de9e-bfc7-43fc-9358-7353569d9831_traningcofpt-1.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\12c7de9e-bfc7-43fc-9358-7353569d9831_traningcofpt-1.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\15775f86-2d5d-42ea-bbee-b0b15b074bfa_nguyen-hai-anh-cv.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/images/15775f86-2d5d-42ea-bbee-b0b15b074bfa_nguyen-hai-anh-cv.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\15775f86-2d5d-42ea-bbee-b0b15b074bfa_nguyen-hai-anh-cv.pdf))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\1aa36564-fc5e-426c-8019-eb6c1fa8f5ea_demo.pdf))">
       <SourceType>Package</SourceType>
@@ -21120,6 +21552,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\210a9d21-c84f-4176-a196-f340f01b9e0b_images.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\217566ab-58de-45df-9b3e-1ab10366e371_nguyen-hai-anh-cv.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/images/217566ab-58de-45df-9b3e-1ab10366e371_nguyen-hai-anh-cv.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\217566ab-58de-45df-9b3e-1ab10366e371_nguyen-hai-anh-cv.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\2a23505c-b477-4829-ac4e-50e846513664_UML class diagram.png))">
       <SourceType>Package</SourceType>
       <SourceId>TrainingFPTCo</SourceId>
@@ -21168,6 +21616,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\2b76238d-2532-4af0-9eb3-a7c86c767d46_d10-logo.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\2b7eaa03-cc5f-49f7-85de-be11b343cf1e_nguyen-hai-anh-cv.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/images/2b7eaa03-cc5f-49f7-85de-be11b343cf1e_nguyen-hai-anh-cv.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\2b7eaa03-cc5f-49f7-85de-be11b343cf1e_nguyen-hai-anh-cv.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\2ee9dd31-c2ef-4a0e-bd28-288e57ed64d1_images.png))">
       <SourceType>Package</SourceType>
       <SourceId>TrainingFPTCo</SourceId>
@@ -21184,6 +21648,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\2ee9dd31-c2ef-4a0e-bd28-288e57ed64d1_images.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\30d13f10-1c4d-46b4-bf9e-6d439923303b_nguyen-hai-anh-cv.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/images/30d13f10-1c4d-46b4-bf9e-6d439923303b_nguyen-hai-anh-cv.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\30d13f10-1c4d-46b4-bf9e-6d439923303b_nguyen-hai-anh-cv.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\32f8c2bd-4aa0-4650-9e61-810735e4bde1_UML class diagram.png))">
       <SourceType>Package</SourceType>
       <SourceId>TrainingFPTCo</SourceId>
@@ -21199,6 +21679,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\32f8c2bd-4aa0-4650-9e61-810735e4bde1_UML class diagram.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\37b0e43e-488d-45b7-ad8b-e4a88fb02941_traningcofpt-1.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/images/37b0e43e-488d-45b7-ad8b-e4a88fb02941_traningcofpt-1.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\37b0e43e-488d-45b7-ad8b-e4a88fb02941_traningcofpt-1.pdf))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\3fc64b3e-bef4-4811-8f91-7e6a8f61ab88_nguyen-hai-anh-12---copy.jpg))">
       <SourceType>Package</SourceType>
@@ -21376,6 +21872,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\66f0fa27-c6ad-451b-9d1e-c656f09bade0_2.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\6df71979-d8ca-4548-b943-e561f7975c63_traningcofpt-1.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/images/6df71979-d8ca-4548-b943-e561f7975c63_traningcofpt-1.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\6df71979-d8ca-4548-b943-e561f7975c63_traningcofpt-1.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\755f3559-dd62-454f-868f-c2bf39239fed_nguyen-hai-anh-cv.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/images/755f3559-dd62-454f-868f-c2bf39239fed_nguyen-hai-anh-cv.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\755f3559-dd62-454f-868f-c2bf39239fed_nguyen-hai-anh-cv.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\79af539d-73cf-4cff-bbd7-b349ddb50ad4_demo.pdf))">
       <SourceType>Package</SourceType>
       <SourceId>TrainingFPTCo</SourceId>
@@ -21391,6 +21919,38 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\79af539d-73cf-4cff-bbd7-b349ddb50ad4_demo.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\7a606f13-9f3d-4192-b666-d7ae83830325_traningcofpt-1.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/images/7a606f13-9f3d-4192-b666-d7ae83830325_traningcofpt-1.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\7a606f13-9f3d-4192-b666-d7ae83830325_traningcofpt-1.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\7e35e39c-98fa-46a5-aa20-54ac29eb5ff7_traningcofpt-1.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/images/7e35e39c-98fa-46a5-aa20-54ac29eb5ff7_traningcofpt-1.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\7e35e39c-98fa-46a5-aa20-54ac29eb5ff7_traningcofpt-1.pdf))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\84f5895c-e2de-4224-8e2c-1ff93e4ccac5_screenshot-2024-02-20-153646.png))">
       <SourceType>Package</SourceType>
@@ -21440,6 +22000,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\88cfff7c-0a6d-44c3-9f16-32c48f5a78b3_d10-logo.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\952bc60d-e711-4f8c-9bb0-90e025e13997_traningcofpt-1.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/images/952bc60d-e711-4f8c-9bb0-90e025e13997_traningcofpt-1.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\952bc60d-e711-4f8c-9bb0-90e025e13997_traningcofpt-1.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\955b8213-27f7-403c-9461-8a57e3a0877f_2849902.png))">
       <SourceType>Package</SourceType>
       <SourceId>TrainingFPTCo</SourceId>
@@ -21456,6 +22032,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\955b8213-27f7-403c-9461-8a57e3a0877f_2849902.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\9854c752-9d9c-4380-903d-91bacb6ce38d_nguyen-hai-anh-cv.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/images/9854c752-9d9c-4380-903d-91bacb6ce38d_nguyen-hai-anh-cv.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\9854c752-9d9c-4380-903d-91bacb6ce38d_nguyen-hai-anh-cv.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\9c4423c8-6226-41d6-98bd-f05589dc3246_screenshot-2024-03-12-125741.png))">
       <SourceType>Package</SourceType>
       <SourceId>TrainingFPTCo</SourceId>
@@ -21471,6 +22063,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\9c4423c8-6226-41d6-98bd-f05589dc3246_screenshot-2024-03-12-125741.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\a37f3f12-34f1-4289-b876-36609dd14f12_asm2adpresentation1stletiendatbh00219.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/images/a37f3f12-34f1-4289-b876-36609dd14f12_asm2adpresentation1stletiendatbh00219.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\a37f3f12-34f1-4289-b876-36609dd14f12_asm2adpresentation1stletiendatbh00219.pdf))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\a43d5cae-dc84-437b-86da-eb1ef0b7df4b_2849902.png))">
       <SourceType>Package</SourceType>
@@ -21536,6 +22144,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\b0e9f6cd-f26d-4190-a846-baa0a5626597_UML class diagram.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\b1916bd4-093f-4536-b140-fafc5cfd90d2_traningcofpt-1.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/images/b1916bd4-093f-4536-b140-fafc5cfd90d2_traningcofpt-1.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\b1916bd4-093f-4536-b140-fafc5cfd90d2_traningcofpt-1.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\b735a104-4d76-4445-842e-1eee1e717805_traningcofpt-1.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/images/b735a104-4d76-4445-842e-1eee1e717805_traningcofpt-1.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\b735a104-4d76-4445-842e-1eee1e717805_traningcofpt-1.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\ba1a1ec3-a2b3-41e3-a66b-c103b32c8302_screenshot-2024-02-20-153726.png))">
       <SourceType>Package</SourceType>
       <SourceId>TrainingFPTCo</SourceId>
@@ -21551,6 +22191,38 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\ba1a1ec3-a2b3-41e3-a66b-c103b32c8302_screenshot-2024-02-20-153726.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\baa463d0-ad90-4cf4-9b10-c2dff2571dfb_traningcofpt-1.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/images/baa463d0-ad90-4cf4-9b10-c2dff2571dfb_traningcofpt-1.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\baa463d0-ad90-4cf4-9b10-c2dff2571dfb_traningcofpt-1.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\bd8bdddd-f158-4bab-a244-c9b6a8218436_traningcofpt-1.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/images/bd8bdddd-f158-4bab-a244-c9b6a8218436_traningcofpt-1.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\bd8bdddd-f158-4bab-a244-c9b6a8218436_traningcofpt-1.pdf))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\beb7473f-0f93-4479-8d59-f8e5f2817698_screenshot-2024-03-12-125741.png))">
       <SourceType>Package</SourceType>
@@ -21583,6 +22255,38 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\bf5dcc1f-314a-4ec9-96c1-c7c236dea2b5_screenshot-2024-02-20-153704.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\c1730f7f-297e-475e-99b1-7ff84aef019e_asm2adpresentation1stletiendatbh00219.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/images/c1730f7f-297e-475e-99b1-7ff84aef019e_asm2adpresentation1stletiendatbh00219.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\c1730f7f-297e-475e-99b1-7ff84aef019e_asm2adpresentation1stletiendatbh00219.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\c208f7ee-9dc1-45e5-bcc4-6eadca193242_traningcofpt-1.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/images/c208f7ee-9dc1-45e5-bcc4-6eadca193242_traningcofpt-1.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\c208f7ee-9dc1-45e5-bcc4-6eadca193242_traningcofpt-1.pdf))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\c3076ec4-656d-4a72-a9da-1e709ac93469_2849902.png))">
       <SourceType>Package</SourceType>
@@ -21631,6 +22335,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\caa6ba62-b86c-4a03-8a73-9df0d0b6a98c_screenshot-2024-02-20-153704.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\d1155a6d-7c45-4d08-8c5e-fa8ef9cd55a0_traningcofpt-1.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/images/d1155a6d-7c45-4d08-8c5e-fa8ef9cd55a0_traningcofpt-1.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\d1155a6d-7c45-4d08-8c5e-fa8ef9cd55a0_traningcofpt-1.pdf))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\d6be8720-9077-4915-a325-7df4feb7fff3_screenshot-2024-02-20-153715.png))">
       <SourceType>Package</SourceType>
@@ -21744,6 +22464,182 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\ecf026e5-0b66-4d46-be95-5c043804bd8c_screenshot-2024-03-08-153912.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\f7451bb0-db78-47c4-9abf-cced70df03a3_nguyen-hai-anh-cv.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/images/f7451bb0-db78-47c4-9abf-cced70df03a3_nguyen-hai-anh-cv.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\f7451bb0-db78-47c4-9abf-cced70df03a3_nguyen-hai-anh-cv.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\fb4b7604-c372-4849-b424-cd8765056cc4_nguyen-hai-anh-cv.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/images/fb4b7604-c372-4849-b424-cd8765056cc4_nguyen-hai-anh-cv.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\fb4b7604-c372-4849-b424-cd8765056cc4_nguyen-hai-anh-cv.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\2079cc73-2b60-49c1-be99-fe9b77100826_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/videos/2079cc73-2b60-49c1-be99-fe9b77100826_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\2079cc73-2b60-49c1-be99-fe9b77100826_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\2232406b-c413-440d-8bb3-aefcf250d384_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/videos/2232406b-c413-440d-8bb3-aefcf250d384_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\2232406b-c413-440d-8bb3-aefcf250d384_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\2641f0ff-1cc5-4bb4-bd56-e561f66f1266_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/videos/2641f0ff-1cc5-4bb4-bd56-e561f66f1266_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\2641f0ff-1cc5-4bb4-bd56-e561f66f1266_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\2792fece-9548-4ec9-8b07-d74cd2d744cb_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/videos/2792fece-9548-4ec9-8b07-d74cd2d744cb_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\2792fece-9548-4ec9-8b07-d74cd2d744cb_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\354361a7-68a4-4c48-9512-a7a11a5b7f15_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/videos/354361a7-68a4-4c48-9512-a7a11a5b7f15_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\354361a7-68a4-4c48-9512-a7a11a5b7f15_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\39986fb0-0f56-43f0-b857-ebe229c539cc_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/videos/39986fb0-0f56-43f0-b857-ebe229c539cc_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\39986fb0-0f56-43f0-b857-ebe229c539cc_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\459b3e62-2dd5-467a-97b4-8f8f057dad7c_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/videos/459b3e62-2dd5-467a-97b4-8f8f057dad7c_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\459b3e62-2dd5-467a-97b4-8f8f057dad7c_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\4d0461ca-a3fe-4b1e-97e5-a4a4cffc3647_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/videos/4d0461ca-a3fe-4b1e-97e5-a4a4cffc3647_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\4d0461ca-a3fe-4b1e-97e5-a4a4cffc3647_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\4f03a287-2bea-43d7-a6d7-31b570f525bf_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/videos/4f03a287-2bea-43d7-a6d7-31b570f525bf_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\4f03a287-2bea-43d7-a6d7-31b570f525bf_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\80232997-2a80-4589-97a4-49fb7c2b65bd_samplevideomp4-240p.mp4))">
       <SourceType>Package</SourceType>
       <SourceId>TrainingFPTCo</SourceId>
@@ -21760,6 +22656,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\80232997-2a80-4589-97a4-49fb7c2b65bd_samplevideomp4-240p.mp4))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\8f4026b7-8a89-45cd-a1da-08a6ffa84d89_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/videos/8f4026b7-8a89-45cd-a1da-08a6ffa84d89_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\8f4026b7-8a89-45cd-a1da-08a6ffa84d89_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\927759ea-f15a-47d8-be53-5c3bae443ce2_samplevideomp4-240p.mp4))">
       <SourceType>Package</SourceType>
       <SourceId>TrainingFPTCo</SourceId>
@@ -21775,6 +22687,182 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\927759ea-f15a-47d8-be53-5c3bae443ce2_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\9c3301cb-5b5c-422f-926c-1439a75e2ddf_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/videos/9c3301cb-5b5c-422f-926c-1439a75e2ddf_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\9c3301cb-5b5c-422f-926c-1439a75e2ddf_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\9ddec5ec-eff8-45bb-b64c-8cdc695fbd69_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/videos/9ddec5ec-eff8-45bb-b64c-8cdc695fbd69_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\9ddec5ec-eff8-45bb-b64c-8cdc695fbd69_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\9e51ccdd-f3cd-4211-be7e-004da6f41639_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/videos/9e51ccdd-f3cd-4211-be7e-004da6f41639_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\9e51ccdd-f3cd-4211-be7e-004da6f41639_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\a7ed725e-2d25-4b24-bc2f-6e85f4bc959b_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/videos/a7ed725e-2d25-4b24-bc2f-6e85f4bc959b_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\a7ed725e-2d25-4b24-bc2f-6e85f4bc959b_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\ba1922ae-c84a-4675-a23d-5a70dc4fca5f_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/videos/ba1922ae-c84a-4675-a23d-5a70dc4fca5f_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\ba1922ae-c84a-4675-a23d-5a70dc4fca5f_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\be410d61-7c18-45b6-b395-89bbff71b7df_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/videos/be410d61-7c18-45b6-b395-89bbff71b7df_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\be410d61-7c18-45b6-b395-89bbff71b7df_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\bffc24a4-16cf-42f3-8e76-74778deaa9f4_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/videos/bffc24a4-16cf-42f3-8e76-74778deaa9f4_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\bffc24a4-16cf-42f3-8e76-74778deaa9f4_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\c5974f05-1656-4d5f-a632-9f31f3907d41_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/videos/c5974f05-1656-4d5f-a632-9f31f3907d41_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\c5974f05-1656-4d5f-a632-9f31f3907d41_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\d5170c80-34a8-4efc-988f-a4c0c057bae7_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/videos/d5170c80-34a8-4efc-988f-a4c0c057bae7_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\d5170c80-34a8-4efc-988f-a4c0c057bae7_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\d6ca3d41-5f3d-41b5-9c4d-b1031ecb4801_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/videos/d6ca3d41-5f3d-41b5-9c4d-b1031ecb4801_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\d6ca3d41-5f3d-41b5-9c4d-b1031ecb4801_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\da8fae78-be90-4231-a806-d5ebede83c8e_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/videos/da8fae78-be90-4231-a806-d5ebede83c8e_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\da8fae78-be90-4231-a806-d5ebede83c8e_samplevideomp4-240p.mp4))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\df0a28f6-c887-42d7-b3e9-369de4b42294_samplevideomp4-240p.mp4))">
       <SourceType>Package</SourceType>
@@ -21807,6 +22895,38 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\e2e6c047-8024-4344-b0eb-173c68750bf5_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\ee108853-e460-4a2c-a75a-00b059231218_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/videos/ee108853-e460-4a2c-a75a-00b059231218_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\ee108853-e460-4a2c-a75a-00b059231218_samplevideomp4-240p.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\efc13d4a-fbc9-481e-b856-91709b70a1be_samplevideomp4-240p.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>TrainingFPTCo</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TrainingFPTCo</BasePath>
+      <RelativePath>uploads/videos/efc13d4a-fbc9-481e-b856-91709b70a1be_samplevideomp4-240p.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\videos\efc13d4a-fbc9-481e-b856-91709b70a1be_samplevideomp4-240p.mp4))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

@@ -24,12 +24,19 @@
         <a class="btn btn-primary" href="@Url.Action("Add","Courses")">Add new Courses</a>
                         }
         <form id="searchForm" asp-action="Index" method="get" class="my-3">
+
             <div class="from-actions no-color col-12">
                 <div class="row">
                     <div class="col-md-5">
                         <div class="mb-3">
                             <label for="SearchString" class="form-label">Find by Name:</label>
                             <input id="SearchString" value="@ViewData["currentFilter"]" type="text" name="SearchString" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="mb-3">
+                            <label for="SearchCategoryName" class="form-label">Find by Name:</label>
+                            <input id="SearchCategoryName" value="@ViewData["currentFilter1"]" type="text" name="SearchCategoryName" class="form-control" />
                         </div>
                     </div>
                     <div class="col-md-2">

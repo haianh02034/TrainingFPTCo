@@ -20,9 +20,7 @@
         <div class="row">
            
             <div class="col">
-                <a class="nav-link" href="javascript:void(0)">
-                    @HttpContextAccessor.HttpContext.Session.GetString("SessionRoleId")
-                </a>
+             
                 <h1 class="heading">
                     Role :
                     @if (HttpContextAccessor.HttpContext.Session.GetString("SessionRoleId") == "4")

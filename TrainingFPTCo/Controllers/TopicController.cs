@@ -20,7 +20,7 @@ namespace TrainingFPTCo.Controllers
             sessionRoleId = _httpContextAccessor.HttpContext.Session.GetString("SessionRoleId");
         }
 
-        
+
 
         [HttpGet]
         public IActionResult Index(string SearchString, string FilterStatus)
@@ -31,11 +31,11 @@ namespace TrainingFPTCo.Controllers
             {
                 return RedirectToAction(nameof(LoginController.Index), "Login");
             }
-            if ( sessionRoleId == "2" || sessionRoleId == "4")
+            if (sessionRoleId == "2" || sessionRoleId == "4")
             {
                 TopicViewModel topicModel = new TopicViewModel();
                 topicModel.TopicDetailList = new List<TopicDetail>();
-                var dataTopics = new TopicQuery().GetAllTopics();
+                var dataTopics = new TopicQuery().GetAllTopics(SearchString, FilterStatus);
 
                 foreach (var item in dataTopics)
                 {
@@ -57,7 +57,7 @@ namespace TrainingFPTCo.Controllers
                 ViewData["currentFilter"] = SearchString;
                 ViewBag.FilterStatus = FilterStatus;
 
-                return View(topicModel);           
+                return View(topicModel);
             }
             else
             {
@@ -80,7 +80,7 @@ namespace TrainingFPTCo.Controllers
             else
             {
                 List<SelectListItem> itemCourses = new List<SelectListItem>();
-                var dataCourse = new CourseQuery().GetAllDataCourses();
+                var dataCourse = new CourseQuery().GetAllDataCourses("","", "");
                 foreach (var item in dataCourse)
                 {
                     itemCourses.Add(new SelectListItem
@@ -128,7 +128,6 @@ namespace TrainingFPTCo.Controllers
                         image,
                         topic.TypeDocument
                     );
-
                     if (idTopic > 0)
                     {
                         TempData["saveStatus"] = true;
@@ -139,17 +138,22 @@ namespace TrainingFPTCo.Controllers
                         TempData["saveStatus"] = false;
                         ModelState.AddModelError("", "Failed to save topic.");
                     }
+                    //return Ok(idTopic);
+                    return Ok("0");
+
                 }
                 catch (Exception ex)
                 {
                     TempData["saveStatus"] = false;
                     ModelState.AddModelError("", "An error occurred while processing your request.");
+                    return Ok(ex.Message);
+
                 }
-                //return Ok(topic);
+                return Ok(topic);
                 return RedirectToAction(nameof(TopicController.Index), "Topic");
             }
             List<SelectListItem> itemCourses = new List<SelectListItem>();
-            var dataCourse = new CourseQuery().GetAllDataCourses();
+            var dataCourse = new CourseQuery().GetAllDataCourses("","", "");
             foreach (var item in dataCourse)
             {
                 itemCourses.Add(new SelectListItem
@@ -176,7 +180,7 @@ namespace TrainingFPTCo.Controllers
             }
             TopicDetail detail = new TopicQuery().GetDetailTopicById(id);
             List<SelectListItem> itemCourses = new List<SelectListItem>();
-            var dataCourse = new CourseQuery().GetAllDataCourses();
+            var dataCourse = new CourseQuery().GetAllDataCourses("", "","");
             foreach (var item in dataCourse)
             {
                 itemCourses.Add(new SelectListItem
@@ -241,22 +245,22 @@ namespace TrainingFPTCo.Controllers
             {
                 return Ok(ex.Message);
             }
-             List<SelectListItem> itemCourses = new List<SelectListItem>();
-                var dataCourse = new CourseQuery().GetAllDataCourses();
-                foreach (var item in dataCourse)
+            List<SelectListItem> itemCourses = new List<SelectListItem>();
+            var dataCourse = new CourseQuery().GetAllDataCourses("", "","");
+            foreach (var item in dataCourse)
+            {
+                itemCourses.Add(new SelectListItem
                 {
-                    itemCourses.Add(new SelectListItem
-                    {
-                        Value = item.Id.ToString(),
-                        Text = item.Name
-                    });
-                }
-                ViewBag.Courses = itemCourses;
+                    Value = item.Id.ToString(),
+                    Text = item.Name
+                });
+            }
+            ViewBag.Courses = itemCourses;
 
-                // Initialize topic detail object
-                TopicDetail topic = new TopicDetail();
-                topic.SessionRoleId = sessionRoleId;
-                return View(topic);
+            // Initialize topic detail object
+            TopicDetail topic = new TopicDetail();
+            topic.SessionRoleId = sessionRoleId;
+            return View(topic);
         }
 
 
