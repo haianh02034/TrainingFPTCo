@@ -5265,6 +5265,10 @@
       "PackagePath": "staticwebassets\\uploads\\documents\\36f43732-afb5-4a85-87eb-ca0aebb20e46_samplevideomp4-240p.mp4"
     },
     {
+      "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\documents\\42166998-b9d6-4fdb-b67e-1969dff433bf_unit-30-assignment-2-frontsheet-1.docx",
+      "PackagePath": "staticwebassets\\uploads\\documents\\42166998-b9d6-4fdb-b67e-1969dff433bf_unit-30-assignment-2-frontsheet-1.docx"
+    },
+    {
       "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\documents\\4f7602d1-d101-4093-b18d-cc6a0d5da95a_samplevideomp4-240p.mp4",
       "PackagePath": "staticwebassets\\uploads\\documents\\4f7602d1-d101-4093-b18d-cc6a0d5da95a_samplevideomp4-240p.mp4"
     },
@@ -5275,6 +5279,10 @@
     {
       "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\documents\\5b1eeeb9-54f5-45b1-a448-d7d2dec919f0_samplevideomp4-240p.mp4",
       "PackagePath": "staticwebassets\\uploads\\documents\\5b1eeeb9-54f5-45b1-a448-d7d2dec919f0_samplevideomp4-240p.mp4"
+    },
+    {
+      "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\documents\\6bf63b73-862a-4092-819c-a835f6f6a3ca_tieng-vit-keu-wwwtiengdongcom.mp3",
+      "PackagePath": "staticwebassets\\uploads\\documents\\6bf63b73-862a-4092-819c-a835f6f6a3ca_tieng-vit-keu-wwwtiengdongcom.mp3"
     },
     {
       "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\documents\\6c54e380-7f5c-4f86-a96c-95f7332679de_nguyen-hai-anh-cv.pdf",
@@ -5335,6 +5343,14 @@
     {
       "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\documents\\cc14c071-17a2-403f-8d06-e6ff186fc214_introductionchaomungbandenvoibaivietnay32e407.mp3",
       "PackagePath": "staticwebassets\\uploads\\documents\\cc14c071-17a2-403f-8d06-e6ff186fc214_introductionchaomungbandenvoibaivietnay32e407.mp3"
+    },
+    {
+      "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\documents\\ccee41a4-3058-4365-b54d-095a1de545d7_traningcofpt.pdf",
+      "PackagePath": "staticwebassets\\uploads\\documents\\ccee41a4-3058-4365-b54d-095a1de545d7_traningcofpt.pdf"
+    },
+    {
+      "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\documents\\d2cbcddd-4286-45f8-93a6-3c10567e57f0_nguyen-hai-anh-cv.pdf",
+      "PackagePath": "staticwebassets\\uploads\\documents\\d2cbcddd-4286-45f8-93a6-3c10567e57f0_nguyen-hai-anh-cv.pdf"
     },
     {
       "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\documents\\d427ca7d-3a52-49fe-a5b0-163a245d2a9f_unit-30-assignment-2-frontsheet-1.docx",
@@ -5469,6 +5485,10 @@
       "PackagePath": "staticwebassets\\uploads\\images\\66f0fa27-c6ad-451b-9d1e-c656f09bade0_2.jpg"
     },
     {
+      "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\images\\6ae4a3ff-808b-4de0-b838-311064ce623a_tieng-vit-keu-wwwtiengdongcom.mp3",
+      "PackagePath": "staticwebassets\\uploads\\images\\6ae4a3ff-808b-4de0-b838-311064ce623a_tieng-vit-keu-wwwtiengdongcom.mp3"
+    },
+    {
       "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\images\\6df71979-d8ca-4548-b943-e561f7975c63_traningcofpt-1.pdf",
       "PackagePath": "staticwebassets\\uploads\\images\\6df71979-d8ca-4548-b943-e561f7975c63_traningcofpt-1.pdf"
     },
@@ -5515,6 +5535,14 @@
     {
       "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\images\\9c4423c8-6226-41d6-98bd-f05589dc3246_screenshot-2024-03-12-125741.png",
       "PackagePath": "staticwebassets\\uploads\\images\\9c4423c8-6226-41d6-98bd-f05589dc3246_screenshot-2024-03-12-125741.png"
+    },
+    {
+      "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\images\\a10956ec-42c8-47e4-8c85-ff6b43a24951_2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\a10956ec-42c8-47e4-8c85-ff6b43a24951_2.jpg"
+    },
+    {
+      "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\images\\a34dbfa2-9c96-46da-951d-5751ab67037b_2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\a34dbfa2-9c96-46da-951d-5751ab67037b_2.jpg"
     },
     {
       "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\images\\a37f3f12-34f1-4289-b876-36609dd14f12_asm2adpresentation1stletiendatbh00219.pdf",
@@ -5577,6 +5605,10 @@
       "PackagePath": "staticwebassets\\uploads\\images\\c3076ec4-656d-4a72-a9da-1e709ac93469_2849902.png"
     },
     {
+      "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\images\\c409c96a-97ba-4c8e-a51c-1bd87cbb1dd1_755f3559-dd62-454f-868f-c2bf39239fednguyen-ha.pdf",
+      "PackagePath": "staticwebassets\\uploads\\images\\c409c96a-97ba-4c8e-a51c-1bd87cbb1dd1_755f3559-dd62-454f-868f-c2bf39239fednguyen-ha.pdf"
+    },
+    {
       "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\images\\c7483b77-fb42-47eb-be01-1f4da8a05195_UML class diagram.png",
       "PackagePath": "staticwebassets\\uploads\\images\\c7483b77-fb42-47eb-be01-1f4da8a05195_UML class diagram.png"
     },
@@ -5587,6 +5619,10 @@
     {
       "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\images\\d1155a6d-7c45-4d08-8c5e-fa8ef9cd55a0_traningcofpt-1.pdf",
       "PackagePath": "staticwebassets\\uploads\\images\\d1155a6d-7c45-4d08-8c5e-fa8ef9cd55a0_traningcofpt-1.pdf"
+    },
+    {
+      "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\images\\d502fe5e-d407-4ab1-b213-be266c89716c_2849902.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\d502fe5e-d407-4ab1-b213-be266c89716c_2849902.png"
     },
     {
       "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\images\\d6be8720-9077-4915-a325-7df4feb7fff3_screenshot-2024-02-20-153715.png",
@@ -5617,8 +5653,16 @@
       "PackagePath": "staticwebassets\\uploads\\images\\ecf026e5-0b66-4d46-be95-5c043804bd8c_screenshot-2024-03-08-153912.png"
     },
     {
+      "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\images\\f5d5a6e2-b946-43fa-a87a-c96e3d73a2a0_2849902.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\f5d5a6e2-b946-43fa-a87a-c96e3d73a2a0_2849902.png"
+    },
+    {
       "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\images\\f7451bb0-db78-47c4-9abf-cced70df03a3_nguyen-hai-anh-cv.pdf",
       "PackagePath": "staticwebassets\\uploads\\images\\f7451bb0-db78-47c4-9abf-cced70df03a3_nguyen-hai-anh-cv.pdf"
+    },
+    {
+      "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\images\\f79da768-9f32-4eb6-9eb9-d8eb2eae8750_tieng-le-le-keu-wwwtiengdongcom.mp3",
+      "PackagePath": "staticwebassets\\uploads\\images\\f79da768-9f32-4eb6-9eb9-d8eb2eae8750_tieng-le-le-keu-wwwtiengdongcom.mp3"
     },
     {
       "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\images\\fb4b7604-c372-4849-b424-cd8765056cc4_nguyen-hai-anh-cv.pdf",
@@ -5673,6 +5717,14 @@
       "PackagePath": "staticwebassets\\uploads\\videos\\927759ea-f15a-47d8-be53-5c3bae443ce2_samplevideomp4-240p.mp4"
     },
     {
+      "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\videos\\9554240e-08c1-490b-8fec-85500bda631d_samplevideomp4-240p.mp4",
+      "PackagePath": "staticwebassets\\uploads\\videos\\9554240e-08c1-490b-8fec-85500bda631d_samplevideomp4-240p.mp4"
+    },
+    {
+      "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\videos\\957f8ba8-e39e-44e5-b7fd-ba699d061c92_traningcofpt-1.pdf",
+      "PackagePath": "staticwebassets\\uploads\\videos\\957f8ba8-e39e-44e5-b7fd-ba699d061c92_traningcofpt-1.pdf"
+    },
+    {
       "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\videos\\9c3301cb-5b5c-422f-926c-1439a75e2ddf_samplevideomp4-240p.mp4",
       "PackagePath": "staticwebassets\\uploads\\videos\\9c3301cb-5b5c-422f-926c-1439a75e2ddf_samplevideomp4-240p.mp4"
     },
@@ -5689,6 +5741,10 @@
       "PackagePath": "staticwebassets\\uploads\\videos\\a7ed725e-2d25-4b24-bc2f-6e85f4bc959b_samplevideomp4-240p.mp4"
     },
     {
+      "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\videos\\a93868bc-fe97-44c0-87ff-685e0e48fc97_20c68baa-3d66-473c-8c0f-a356e9e12e7asamplevid.mp4",
+      "PackagePath": "staticwebassets\\uploads\\videos\\a93868bc-fe97-44c0-87ff-685e0e48fc97_20c68baa-3d66-473c-8c0f-a356e9e12e7asamplevid.mp4"
+    },
+    {
       "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\videos\\ba1922ae-c84a-4675-a23d-5a70dc4fca5f_samplevideomp4-240p.mp4",
       "PackagePath": "staticwebassets\\uploads\\videos\\ba1922ae-c84a-4675-a23d-5a70dc4fca5f_samplevideomp4-240p.mp4"
     },
@@ -5699,6 +5755,10 @@
     {
       "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\videos\\bffc24a4-16cf-42f3-8e76-74778deaa9f4_samplevideomp4-240p.mp4",
       "PackagePath": "staticwebassets\\uploads\\videos\\bffc24a4-16cf-42f3-8e76-74778deaa9f4_samplevideomp4-240p.mp4"
+    },
+    {
+      "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\videos\\c246ed76-fdd4-4eb0-9407-a0a55496ce00_traningcofpt-1.pdf",
+      "PackagePath": "staticwebassets\\uploads\\videos\\c246ed76-fdd4-4eb0-9407-a0a55496ce00_traningcofpt-1.pdf"
     },
     {
       "Id": "D:\\ApplicationDevelopment\\TrainingFPTCo\\TrainingFPTCo\\TrainingFPTCo\\wwwroot\\uploads\\videos\\c5974f05-1656-4d5f-a632-9f31f3907d41_samplevideomp4-240p.mp4",

@@ -49,6 +49,7 @@ namespace TrainingFPTCo.Controllers
                         Status = item.Status,
                         NameDocuments = item.NameDocuments,
                         NameAttachFile = item.NameAttachFile,
+                        NamePoterTopic = item.NamePoterTopic,
                         TypeDocument = item.TypeDocument,
                         CreatedAt = item.CreatedAt,
                         UpdatedAt = item.UpdatedAt,
@@ -82,7 +83,7 @@ namespace TrainingFPTCo.Controllers
             else
             {
                 List<SelectListItem> itemCourses = new List<SelectListItem>();
-                var dataCourse = new CourseQuery().GetAllDataCourses("","", "");
+                var dataCourse = new CourseQuery().GetAllDataCourses(null,null,null);
                 foreach (var item in dataCourse)
                 {
                     itemCourses.Add(new SelectListItem
@@ -155,7 +156,7 @@ namespace TrainingFPTCo.Controllers
                 return RedirectToAction(nameof(TopicController.Index), "Topic");
             }
             List<SelectListItem> itemCourses = new List<SelectListItem>();
-            var dataCourse = new CourseQuery().GetAllDataCourses("","", "");
+            var dataCourse = new CourseQuery().GetAllDataCourses(null, null, null);
             foreach (var item in dataCourse)
             {
                 itemCourses.Add(new SelectListItem
@@ -182,7 +183,7 @@ namespace TrainingFPTCo.Controllers
             }
             TopicDetail detail = new TopicQuery().GetDetailTopicById(id);
             List<SelectListItem> itemCourses = new List<SelectListItem>();
-            var dataCourse = new CourseQuery().GetAllDataCourses("", "","");
+            var dataCourse = new CourseQuery().GetAllDataCourses(null, null, null);
             foreach (var item in dataCourse)
             {
                 itemCourses.Add(new SelectListItem
@@ -248,7 +249,7 @@ namespace TrainingFPTCo.Controllers
                 return Ok(ex.Message);
             }
             List<SelectListItem> itemCourses = new List<SelectListItem>();
-            var dataCourse = new CourseQuery().GetAllDataCourses("", "","");
+            var dataCourse = new CourseQuery().GetAllDataCourses(null, null, null);
             foreach (var item in dataCourse)
             {
                 itemCourses.Add(new SelectListItem

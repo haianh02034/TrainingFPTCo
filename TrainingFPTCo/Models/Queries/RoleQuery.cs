@@ -12,19 +12,11 @@ namespace TrainingFPTCo.Models.Queries
 
             using (SqlConnection connection = Database.GetSqlConnection())
             {
-                string sqlData = "SELECT * FROM [Role] WHERE [Name] LIKE @keyWord AND [DeletedAt] IS NULL";
-                if (FilterStatus != null)
-                {
-                    sqlData += " AND [Status] = @status";
-                }
-
+                string sqlData = "SELECT * FROM [Role] WHERE  [DeletedAt] IS NULL";
+              
                 connection.Open();
                 SqlCommand command = new SqlCommand(sqlData, connection);
-                command.Parameters.AddWithValue("@keyWord", "%" + SearchString + "%" ?? DBNull.Value.ToString());
-                if (FilterStatus != null)
-                {
-                    command.Parameters.AddWithValue("@status", FilterStatus ?? DBNull.Value.ToString());
-                }
+              
 
                 using (SqlDataReader reader = command.ExecuteReader())
                 {

@@ -82,7 +82,7 @@ namespace TrainingFPTCo.Controllers
             else
             {
                 List<SelectListItem> itemCategories = new List<SelectListItem>();
-                var dataCategory = new CategoryQuery().GetAllCategories("", "");
+                var dataCategory = new CategoryQuery().GetAllCategories(null,null);
                 foreach (var item in dataCategory)
                 {
                     itemCategories.Add(new SelectListItem
@@ -132,14 +132,14 @@ namespace TrainingFPTCo.Controllers
                 catch (Exception ex) {
                     return Ok(ex.Message);
                 }
-                return Ok(course);
+                //return Ok(course);
 
                 return RedirectToAction(nameof(CoursesController.Index), "Courses");
 
             }
 
             List<SelectListItem> itemCategories = new List<SelectListItem>();
-            var dataCategory = new CategoryQuery().GetAllCategories("", "");
+            var dataCategory = new CategoryQuery().GetAllCategories(null, null);
             foreach (var item in dataCategory)
             {
                 itemCategories.Add(new SelectListItem
@@ -179,7 +179,7 @@ namespace TrainingFPTCo.Controllers
             }
             CourseDetail detail =new CourseQuery().GetDetailCourseById(id);
             List<SelectListItem> itemCategories = new List<SelectListItem>();
-            var dataCategory = new CategoryQuery().GetAllCategories("", "");
+            var dataCategory = new CategoryQuery().GetAllCategories(null, null);
             foreach (var item in dataCategory)
             {
                 itemCategories.Add(new SelectListItem
@@ -231,7 +231,7 @@ namespace TrainingFPTCo.Controllers
                 return Ok(ex.Message);
             }
             List<SelectListItem> itemCategories = new List<SelectListItem>();
-            var dataCategory = new CategoryQuery().GetAllCategories("", "");
+            var dataCategory = new CategoryQuery().GetAllCategories(null, null);
             foreach (var item in dataCategory)
             {
                 itemCategories.Add(new SelectListItem

@@ -111,7 +111,7 @@
 
                 <div class="form-group mb-3">
                     <label asp-for="PoterTopic"></label>
-                    <input type="file" asp-for="PoterTopic" class="form-control" />
+                    <input type="file" asp-for="PoterTopic" class="form-control" accept="application/pdf" />
                     <span asp-validation-for="PoterTopic"></span>
                     <br />
                     @if (!string.IsNullOrEmpty(Model.NamePoterTopic))
@@ -119,6 +119,7 @@
                         <a href="/uploads/images/@Model.NamePoterTopic" download>Download PDF</a>
                     }
                 </div>
+
               
            
            

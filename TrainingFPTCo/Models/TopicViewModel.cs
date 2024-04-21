@@ -29,16 +29,17 @@ namespace TrainingFPTCo.Models
 
         public string? NameAttachFile { get; set; }
 
-        [Required(ErrorMessage = "Choose video file, please")]
-        [AllowExtensionFile(new string[] { ".mp4", ".avi", ".mkv", ".wmv" })]
+        [Required(ErrorMessage = "Choose video, mp3 file, please")]
+        [AllowExtensionFile(new string[] { ".mp4", ".mp3", ".avi", ".mkv", ".wmv", ".pdf" })]
         [AllowSizeFile(5 * 1024 * 1024)]
         public IFormFile? AttachFile { get; set; }
         public string? NamePoterTopic { get; set; }
 
-        [Required(ErrorMessage = "Choose file, please")]
-        [AllowExtensionFile(new string[] { ".pdf" })]
+        [Required(ErrorMessage = "Choose file pdf, png please")]
+        [AllowExtensionFile(new string[] { ".pdf", ".png", ".jpg", ".pptx", ".ppt" })]
         [AllowSizeFile(5 * 1024 * 1024)]
         public IFormFile? PoterTopic { get; set; }
+
         public string? TypeDocument { get; set; }
 
         public DateTime? CreatedAt { get; set; }

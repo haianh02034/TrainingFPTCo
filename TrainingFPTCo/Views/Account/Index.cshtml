@@ -8,6 +8,8 @@
     ViewData["breadcrumb_active"] = "Account";
     Layout = "~/Views/Shared/_LayoutMain.cshtml";
     bool statusAdd = Convert.ToBoolean(TempData["saveStatus"]);
+    bool statusDel = Convert.ToBoolean(TempData["statusDelete"]);
+    bool statusUpdate = Convert.ToBoolean(TempData["statusUpdate"]);
 
 }
 <div class="row">
@@ -68,6 +70,28 @@
     else
     {
         <div class="text-danger my-3"> Add Failure </div>
+    }
+}
+ @if (TempData["statusDelete"] != null)
+        {
+            @if (statusDel)
+            {
+                <div class="text-success my-3"> Delete Successfully </div>
+            }
+            else
+            {
+                <div class="text-danger my-3"> Delete Failure </div>
+            }
+        }
+@if (TempData["statusUpdate"] != null)
+{
+    @if (statusUpdate)
+    {
+        <div class="text-success my-3"> Update Successfully </div>
+    }
+    else
+    {
+        <div class="text-danger my-3"> Update Failure </div>
     }
 }
 <div class="row mt-3 d-flex justify-content-center" >

@@ -114,6 +114,7 @@
                 <th>Status</th>
                 <th>Documents</th>
                 <th>Attach File</th>
+                <td>PoterTopic</td>
                 <th>Type Document</th>
                 <th>Created At</th>
                 <th>Updated At</th>
@@ -138,6 +139,8 @@
                                 <video width="320" height="240" controls>
                                     <source src="@Url.Content("~/uploads/documents/" + topic.NameDocuments)" type="video/mp4">
                                 </video>
+                                <br />
+                                <a href="@Url.Content("~/uploads/documents/" + topic.NameDocuments)" download>Download MP4</a>
                             }
                             else if (topic.NameDocuments.EndsWith(".mp3"))
                             {
@@ -145,6 +148,8 @@
                                     <source src="@Url.Content("~/uploads/documents/" + topic.NameDocuments)" type="audio/mp3">
                                     Your browser does not support the audio element.
                                 </audio>
+                                <br />
+                                <a href="@Url.Content("~/uploads/documents/" + topic.NameDocuments)" download>Download MP3</a>
                             }
                             else if (topic.NameDocuments.EndsWith(".doc"))
                             {
@@ -157,6 +162,8 @@
                             else
                             {
                                 <span>Unsupported file format</span>
+                                <a href="@Url.Content("~/uploads/documents/" + topic.NameDocuments)" download>Download file</a>
+
                             }
                         }
                         else
@@ -167,15 +174,71 @@
                     <td>
                         @if (!string.IsNullOrEmpty(topic.NameAttachFile))
                         {
-                            <video width="320" height="240" controls>
-                                <source src="@Url.Content("~/uploads/videos/" + topic.NameAttachFile)" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
+                            @if (topic.NameAttachFile.EndsWith(".mp4"))
+                            {
+                                <video width="320" height="240" controls>
+                                    <source src="@Url.Content("~/uploads/videos/" + topic.NameAttachFile)" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <br />
+                                <a href="@Url.Content("~/uploads/videos/" + topic.NameAttachFile)" download>Download MP4</a>
+                            }
+                            else if (topic.NameAttachFile.EndsWith(".mp3"))
+                            {
+                                <audio controls>
+                                    <source src="@Url.Content("~/uploads/videos/" + topic.NameAttachFile)" type="audio/mp3">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <br />
+                                <a href="@Url.Content("~/uploads/videos/" + topic.NameAttachFile)" download>Download MP3</a>
+                            }
+                            else if (topic.NameAttachFile.EndsWith(".pptx") || topic.NameAttachFile.EndsWith(".ppt"))
+                            {
+                                <a href="@Url.Content("~/uploads/videos/" + topic.NameAttachFile)" download>Download PowerPoint</a>
+                            }
+                            else if (topic.NameAttachFile.EndsWith(".pdf"))
+                            {
+                                <a href="@Url.Content("~/uploads/videos/" + topic.NameAttachFile)" download>Download PDF</a>
+                            }
+                            else
+                            {
+                                <span>Unsupported file format</span>
+                                <a href="@Url.Content("~/uploads/videos/" + topic.NameAttachFile)" download>Download file</a>
+
+                            }
                         }
                         else
                         {
                             <span>No Video</span>
                         }
+
+                    </td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(topic.NamePoterTopic))
+                        {
+                            @if (topic.NamePoterTopic.EndsWith(".pdf"))
+                            {
+                                <a href="@Url.Content("~/uploads/images/" + topic.NamePoterTopic)" download>Download PDF</a>
+                            }
+                           
+                            else if (topic.NamePoterTopic.EndsWith(".pptx") || topic.NamePoterTopic.EndsWith(".ppt"))
+                            {
+                                <a href="@Url.Content("~/uploads/images/" + topic.NamePoterTopic)" download>Download PowerPoint</a>
+                            }
+                            else
+                            {
+                                <span>Unsupported file format</span>
+                                <a href="@Url.Content("~/uploads/images/" + topic.NamePoterTopic)" download>Download file</a>
+                                <img src="@Url.Content("~/uploads/images/" + topic.NamePoterTopic)" alt="@topic.NamePoterTopic" width="50" height="50" />
+
+                            }
+
+                        }
+                        else
+                        {
+                            <span>No Video</span>
+                        }
+
                     </td>
                     <td>@topic.TypeDocument</td>
                     <td>@topic.CreatedAt</td>
